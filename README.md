@@ -1,9 +1,11 @@
-# TF2CDownloader
-To end-users, this tool is the official installer and updater for Team Fortress 2 Classic. 
+# PF2Downloader
+To end-users, this tool is the official installer and updater for Pre-Fortress 2. 
 
 To programmers, this is a thin and rough script that sits on top of Aria2 and Butler to provide reasonably-efficient updating without too much complication.
 
 To other Sourcemods, this is a tool you can use for *your project* with only minor work, as the mechanism here is extremely agnostic and flexible. Get in touch with cco on our Discord if you're interested!
+
+Forked from [TF2CDownloader](https://github.com/tf2classic/TF2CDownloader)
 
 ----
 
