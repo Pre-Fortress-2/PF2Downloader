@@ -28,16 +28,16 @@ def update_version_file():
     file, which is what the game itself uses directly to show the version number on the main menu, etc.
     """
     try:
-        old_version_file = open(vars.INSTALL_PATH + '/tf2classic/version.txt', 'r')
-        old_version = old_version_file.readlines()[1]
-        before, sep, after = old_version.partition('=')
-        if len(after) > 0:
-            old_version = after
-        old_version = old_version.replace('.', '')
-        new_version_file = open(vars.INSTALL_PATH + '/tf2classic/rev.txt', 'w')
+        old_version_file = open(vars.INSTALL_PATH + '/pf2/version.txt', 'r')
+        #old_version = old_version_file.readlines()[1]
+        #before, sep, after = old_version.partition('=')
+        #if len(after) > 0:
+        #    old_version = after
+        #old_version = old_version.replace('.', '')
+        #new_version_file = open(vars.INSTALL_PATH + '/tf2classic/rev.txt', 'w')
         # We unconditionally overwrite rev.txt since version.txt is the canonical file.
-        new_version_file.write(old_version)
-        new_version_file.close()
+        #new_version_file.write(old_version)
+        #new_version_file.close()
         old_version_file.close()
         return True
     except FileNotFoundError:
@@ -49,8 +49,9 @@ def update_version_file():
 
 def get_installed_version():
     update_version_file()
-    local_version_file = open(vars.INSTALL_PATH + '/tf2classic/rev.txt', 'r')
+    local_version_file = open(vars.INSTALL_PATH + '/pf2/version.txt', 'r')
     local_version = local_version_file.read().rstrip('\n')
+    local_version.partition("=")[1]
     return local_version
 
 def check_for_updates():
@@ -59,26 +60,27 @@ def check_for_updates():
     """
 
     # This probably was already communicated to the user in update_version_file(), but if version.txt doesn't exist, skip updating.
-    if not path.exists(vars.INSTALL_PATH + '/tf2classic/version.txt'):
+    if not path.exists(vars.INSTALL_PATH + '/pf2/version.txt'):
         if gui.message_yes_no(_("No game installation detected at given sourcemods path. Do you want to install the game?")):
             return False
         else:
             gui.message_end(_("We have nothing to do. Goodbye!"), 0)
 
-    try:
-        local_version_file = open(vars.INSTALL_PATH + '/tf2classic/rev.txt', 'r')
-        local_version = local_version_file.read().rstrip('\n')
-    except ValueError:
-        if gui.message_yes_no(_("We can't read the version of your installation. It could be corrupted. Do you want to reinstall the game?"), False):
-            return False
-        else:
-            gui.message_end(_("We have nothing to do. Goodbye!"), 0)
+    #try:
+    #    local_version_file = open(vars.INSTALL_PATH + '/tf2classic/rev.txt', 'r')
+    #    local_version = local_version_file.read().rstrip('\n')
+    #except ValueError:
+    #    if gui.message_yes_no(_("We can't read the version of your installation. It could be corrupted. Do you want to reinstall the game?"), False):
+    #        return False
+    #    else:
+    #        gui.message_end(_("We have nothing to do. Goodbye!"), 0)
     # End of checking, we definitely have a valid installation at this point
     # Now we have to see if there's a remote patch matching our local version
 
 
     # First, as a basic sanity check, do we know about this version at all?
     # We don't want to try to patch from 746 or some other nonexistent version.
+    local_version = get_installed_version()
     version_json = get_version_list()["versions"]
     found = False
     for ver in version_json:
@@ -103,7 +105,7 @@ def check_for_updates():
     # Finally, we ensure our local version has a patch available before continuing.
     patches = get_version_list()["patches"]
     if local_version in patches:
-        if gui.message_yes_no(_("An update is available for TF2 Classic. Do you want to install it?"), None, True):
+        if gui.message_yes_no(_("An update is available for Pre Fortress 2. Do you want to install it?"), None, True):
             if gui.message_yes_no(_("If running, please close your game client and/or game launcher. Confirm once they're closed."), None, True):
                 return True
             else:

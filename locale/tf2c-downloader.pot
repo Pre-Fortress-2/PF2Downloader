@@ -101,7 +101,7 @@ msgstr ""
 
 #: gui.py:32 gui.py:42
 msgid ""
-"Starting the download for TF2 Classic... You may see some errors that are "
+"Starting the download for Pre Fortress 2... You may see some errors that are "
 "safe to ignore."
 msgstr ""
 
@@ -212,13 +212,13 @@ msgid ""
 msgstr ""
 
 #: setup.py:91
-msgid "Please, enter the location in which TF2 Classic will be installed to.\n"
+msgid "Please, enter the location in which Pre Fortress 2 will be installed to.\n"
 msgstr ""
 
 #: setup.py:94
 #, python-format
 msgid ""
-"TF2 Classic will be installed in %s\n"
+"Pre Fortress 2 will be installed in %s\n"
 "Do you accept?"
 msgstr ""
 
@@ -245,20 +245,20 @@ msgstr ""
 #: tf2c_downloader.py:97
 msgid ""
 "Usage: TF2CDownloader [COMMAND] [PATH]\n"
-"Installation utility for TF2 Classic.\n"
+"Installation utility for Pre Fortress 2.\n"
 "\n"
 "If no arguments are provided, the downloader will be ran in setup mode, in\n"
 "which a series of questions will be asked to install the game for a regular\n"
 "user. This is what's used when opening the downloader from the desktop.\n"
 "\n"
 "Valid commands:\n"
-"  --install           installs TF2 Classic into a new folder inside PATH\n"
-"  --update            updates the pre-existing TF2 Classic installation in "
+"  --install           installs Pre Fortress 2 into a new folder inside PATH\n"
+"  --update            updates the pre-existing Pre Fortress 2 installation in "
 "its\n"
 "                      folder inside PATH\n"
 "  --help              shows this\n"
 "\n"
-"PATH is the folder containing TF2 Classic's folder. This is usually the\n"
+"PATH is the folder containing Pre Fortress 2's folder. This is usually the\n"
 "sourcemods folder for clients, or the Source dedicated server folder for\n"
 "servers.\n"
 "\n"
@@ -270,12 +270,12 @@ msgid ""
 msgstr ""
 
 #: tf2c_downloader.py:130
-msgid "TF2 Classic is already installed. Assuming a reinstallation."
+msgid "Pre Fortress 2 is already installed. Assuming a reinstallation."
 msgstr ""
 
 #: tf2c_downloader.py:145
 msgid ""
-"TF2 Classic isn't installed, cannot do an update. Consider using --install "
+"Pre Fortress 2 isn't installed, cannot do an update. Consider using --install "
 "instead."
 msgstr ""
 
@@ -327,7 +327,7 @@ msgid ""
 msgstr ""
 
 #: versions.py:106
-msgid "An update is available for TF2 Classic. Do you want to install it?"
+msgid "An update is available for Pre Fortress 2. Do you want to install it?"
 msgstr ""
 
 #: versions.py:107

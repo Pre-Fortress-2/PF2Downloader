@@ -50,7 +50,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='tf2c_downloader',
+    name='pf2_downloader',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

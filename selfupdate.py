@@ -27,9 +27,9 @@ def hash_script():
 def check_downloader_update():
     try:
         if system() == 'Windows':
-            remote_hash = httpx.get("https://wiki.tf2classic.com/kachemak/tf2cd_sha512sum_windows")
+            remote_hash = httpx.get( vars.SOURCE_URL + "/pf2cd_sha512sum_windows" )
         else:
-            remote_hash = httpx.get("https://wiki.tf2classic.com/kachemak/tf2cd_sha512sum_linux")
+            remote_hash = httpx.get( vars.SOURCE_URL + "/pf2cd_sha512sum_windows")
     except httpx.RequestError:
         gui.message(_("WARNING: downloader failed to check itself for updates, potentially out-of-date."))
         return
@@ -38,10 +38,10 @@ def check_downloader_update():
     remote_hash_string = remote_hash_string.rstrip('\n')
 
     if remote_hash_string == hash_script():
-        gui.message(_("TF2CDownloader appears to be up-to-date."))
-    elif gui.message_yes_no(_("TF2CDownloader has an update available. Your current version may not work properly. Do you want to install it?")) and not vars.SCRIPT_MODE:
-        gui.message_end(_('Delete TF2CDownloader, then redownload and relaunch it from https://tf2classic.com/download'), 0)
+        gui.message(_("PF2Downloader appears to be up-to-date."))
+    elif gui.message_yes_no(_("PF2Downloader has an update available. Your current version may not work properly. Do you want to install it?")) and not vars.SCRIPT_MODE:
+        gui.message_end(_('Delete PF2Downloader, then redownload and relaunch it from https://prefortress.com/download'), 0)
     elif vars.SCRIPT_MODE:
-        gui.message(_("TF2CDownloader out-of-date."))
+        gui.message(_("PF2Downloader out-of-date."))
     else:
         gui.message(_("User chose to skip update. Things may be broken."))

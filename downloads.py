@@ -17,7 +17,7 @@ import versions
 def download(url, size):
     free_space_check(size, 'temporary')
 
-    run([vars.ARIA2C_BINARY, '--max-connection-per-server=16', '-UTF2CDownloader2023-05-27', '--allow-piece-length-change=true', '--disable-ipv6=true', '--max-concurrent-downloads=16', '--optimize-concurrent-downloads=true', '--check-certificate=false', '--check-integrity=true', '--auto-file-renaming=false', '--continue=true', '--allow-overwrite=true', '--console-log-level=error', '--summary-interval=0', '--bt-hash-check-seed=false', '--seed-time=0',
+    run([vars.ARIA2C_BINARY, '--max-connection-per-server=16', '-UPF2Downloader2024-08-10', '--allow-piece-length-change=true', '--disable-ipv6=true', '--max-concurrent-downloads=16', '--optimize-concurrent-downloads=true', '--check-certificate=false', '--check-integrity=true', '--auto-file-renaming=false', '--continue=true', '--allow-overwrite=true', '--console-log-level=error', '--summary-interval=0', '--bt-hash-check-seed=false', '--seed-time=0',
     '-d' + vars.TEMP_PATH, url], check=True)
 
 
@@ -152,7 +152,7 @@ def update():
     heal_url = version_json[versions.get_installed_version()]["heal"]
 
     # Finally, verify and heal with the information we've gathered.
-    butler_verify(vars.SOURCE_URL + signature_url, vars.INSTALL_PATH + '/tf2classic', vars.SOURCE_URL + heal_url)
-    butler_patch(vars.SOURCE_URL + patch_url, vars.INSTALL_PATH + '/butler-staging', patch_file, vars.INSTALL_PATH + '/tf2classic')
+    butler_verify(vars.SOURCE_URL + signature_url, vars.INSTALL_PATH + '/pf2', vars.SOURCE_URL + heal_url)
+    butler_patch(vars.SOURCE_URL + patch_url, vars.INSTALL_PATH + '/butler-staging', patch_file, vars.INSTALL_PATH + '/pf2')
 
     do_symlink()

@@ -58,10 +58,10 @@ if os.getenv('LANG') is None:
         os.environ['LANG'] = lang
 
 if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
-    gettext.bindtextdomain('tf2c-downloader', os.path.abspath(os.path.join(os.path.dirname(__file__), 'locale')))
+    gettext.bindtextdomain('pf2-downloader', os.path.abspath(os.path.join(os.path.dirname(__file__), 'locale')))
 else:
-    gettext.bindtextdomain('tf2c-downloader', 'locale')
-gettext.textdomain('tf2c-downloader')
+    gettext.bindtextdomain('pf2-downloader', 'locale')
+gettext.textdomain('pf2-downloader')
 
 def wizard():
     try:
@@ -73,7 +73,7 @@ def wizard():
         versions.get_version_list()
 
         # Check if the game is already installed, for the purposes of running update_version_file() safely
-        if os.path.exists(vars.INSTALL_PATH + '/tf2classic/gameinfo.txt'):
+        if os.path.exists(vars.INSTALL_PATH + '/pf2/gameinfo.txt'):
             vars.INSTALLED = True
             versions.update_version_file()
 
@@ -95,20 +95,21 @@ def manual_script():
     try:
         if sys.argv[1] == "--help":
             print(_(
-            '''Usage: TF2CDownloader [COMMAND] [PATH]
-Installation utility for TF2 Classic.
+            '''Usage: PF2Downloader [COMMAND] [PATH]
+Installation utility for Pre Fortress 2
+Forked from TF2CDownloader
 
 If no arguments are provided, the downloader will be ran in setup mode, in
 which a series of questions will be asked to install the game for a regular
 user. This is what's used when opening the downloader from the desktop.
 
 Valid commands:
-  --install           installs TF2 Classic into a new folder inside PATH
-  --update            updates the pre-existing TF2 Classic installation in its
+  --install           installs Pre Fortress 2 into a new folder inside PATH
+  --update            updates the pre-existing Pre Fortress 2 installation in its
                       folder inside PATH
   --help              shows this
 
-PATH is the folder containing TF2 Classic's folder. This is usually the
+PATH is the folder containing Pre Fortress 2's folder. This is usually the
 sourcemods folder for clients, or the Source dedicated server folder for
 servers.
 
@@ -124,11 +125,11 @@ path will be the current work directory.'''
             setup.setup_path_script()
             setup.setup_binaries()
 
-            if os.path.exists(vars.INSTALL_PATH + '/tf2classic/gameinfo.txt'):
+            if os.path.exists(vars.INSTALL_PATH + '/pf2/gameinfo.txt'):
                 vars.INSTALLED = True
 
             if vars.INSTALLED:
-                gui.message(_("TF2 Classic is already installed. Assuming a reinstallation."))
+                gui.message(_("Pre Fortress 2 is already installed. Assuming a reinstallation."))
             downloads.install()
             troubleshoot.apply_blacklist()
             print(_("The installation has successfully completed. Remember to restart Steam!"))
@@ -139,11 +140,11 @@ path will be the current work directory.'''
             setup.setup_path_script()
             setup.setup_binaries()
 
-            if os.path.exists(vars.INSTALL_PATH + '/tf2classic/gameinfo.txt'):
+            if os.path.exists(vars.INSTALL_PATH + '/pf2/gameinfo.txt'):
                 vars.INSTALLED = True
 
             if not vars.INSTALLED:
-                print(_("TF2 Classic isn't installed, cannot do an update. Consider using --install instead."))
+                print(_("Pre Fortress 2 isn't installed, cannot do an update. Consider using --install instead."))
                 exit(1)
             else:
                 vars.INSTALLED = versions.update_version_file()
