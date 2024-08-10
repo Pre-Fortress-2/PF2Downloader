@@ -27,7 +27,7 @@ def data_generator():
 	return datas
 
 a = Analysis(
-    ['tf2c_downloader.py'],
+    ['pf2_downloader.py'],
     pathex=[],
     binaries=[],
     datas=data_generator(),
@@ -64,5 +64,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='tf2c.ico',
+    icon='game.ico',
 )

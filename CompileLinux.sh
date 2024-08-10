@@ -1,2 +1,2 @@
 #!/bin/sh
-pyinstaller tf2c_downloader.spec
+pyinstaller pf2_downloader.spec

@@ -1,1 +1,2 @@
-pyinstaller tf2c_downloader.spec
+@ECHO OFF
+pyinstaller pf2_downloader.spec

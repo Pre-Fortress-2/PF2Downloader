@@ -15,7 +15,7 @@ import sys
 import gui
 import vars
 
-def hash_script():
+def hash_script() -> str:
     h = hashlib.sha512()
     with open(argv[0], 'rb') as file:
         chunk = 0
@@ -24,7 +24,7 @@ def hash_script():
             h.update(chunk)
     return h.hexdigest()
 
-def check_downloader_update():
+def check_downloader_update() -> None:
     try:
         if system() == 'Windows':
             remote_hash = httpx.get( vars.SOURCE_URL + "/PF2DownloaderWindows_sha512" )

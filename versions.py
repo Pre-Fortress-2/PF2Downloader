@@ -10,7 +10,7 @@ import vars
 
 VERSION_LIST = None
 
-def get_version_list():
+def get_version_list() -> list[str]:
     global VERSION_LIST
     if VERSION_LIST is None:
         try:
@@ -20,7 +20,7 @@ def get_version_list():
             gui.message_end(_("Could not get version list. If your internet connection is fine, the servers could be having technical issues."), 1)
     return VERSION_LIST
 
-def update_version_file():
+def update_version_file() -> bool:
     """
     The previous launcher/updater leaves behind a rev.txt file with the old internal revision number.
     To avoid file bloat, we reuse this, but replace it with the game's semantic version number.
@@ -47,14 +47,14 @@ def update_version_file():
             gui.message_end(_("We have nothing to do. Goodbye!"), 0)
 
 
-def get_installed_version():
-    update_version_file()
+def get_installed_version() -> str:
+    #update_version_file()
     local_version_file = open(vars.INSTALL_PATH + '/pf2/version.txt', 'r')
     local_version = local_version_file.read().rstrip('\n')
     local_version.partition("=")[1]
     return local_version
 
-def check_for_updates():
+def check_for_updates() -> bool:
     """
     This function checks the local version against the list of remote versions and deems firstly, if an update is necessary, and secondarily, whether it's more efficient to update or reinstall.
     """

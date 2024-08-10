@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the tf2c-downloader package.
+# This file is distributed under the same license as the pf2-downloader package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: tf2c-downloader\n"
+"Project-Id-Version: game-downloader\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-24 05:14-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: gui.py:26
 msgid ""
-"Welcome to TF2CDownloader. Enter a number to continue.\n"
+"Welcome to PF2Downloader. Enter a number to continue.\n"
 "\n"
 "        1 - Install or reinstall the game\n"
 "        2 - Check for and apply any available updates\n"
@@ -105,11 +105,11 @@ msgid ""
 "safe to ignore."
 msgstr ""
 
-#: gui.py:35 gui.py:45 tf2c_downloader.py:133
+#: gui.py:35 gui.py:45 pf2_downloader.py:133
 msgid "The installation has successfully completed. Remember to restart Steam!"
 msgstr ""
 
-#: gui.py:40 tf2c_downloader.py:154
+#: gui.py:40 pf2_downloader.py:154
 msgid "The update has successfully completed."
 msgstr ""
 
@@ -146,11 +146,11 @@ msgid ""
 "[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
 msgstr ""
 
-#: gui.py:126 tf2c_downloader.py:88
+#: gui.py:126 pf2_downloader.py:88
 msgid "[bold]You are safe to close this window."
 msgstr ""
 
-#: gui.py:128 tf2c_downloader.py:90
+#: gui.py:128 pf2_downloader.py:90
 msgid "Press Enter to exit."
 msgstr ""
 
@@ -161,23 +161,23 @@ msgid ""
 msgstr ""
 
 #: selfupdate.py:41
-msgid "TF2CDownloader appears to be up-to-date."
+msgid "PF2Downloader appears to be up-to-date."
 msgstr ""
 
 #: selfupdate.py:42
 msgid ""
-"TF2CDownloader has an update available. Your current version may not work "
+"PF2Downloader has an update available. Your current version may not work "
 "properly. Do you want to install it?"
 msgstr ""
 
 #: selfupdate.py:43
 msgid ""
-"Delete TF2CDownloader, then redownload and relaunch it from https://"
-"tf2classic.com/download"
+"Delete PF2Downloader, then redownload and relaunch it from https://"
+"pf2lassic.com/download"
 msgstr ""
 
 #: selfupdate.py:45
-msgid "TF2CDownloader out-of-date."
+msgid "PF2Downloader out-of-date."
 msgstr ""
 
 #: selfupdate.py:47
@@ -226,25 +226,25 @@ msgstr ""
 msgid "Reinitialising...\n"
 msgstr ""
 
-#: tf2c_downloader.py:46
+#: pf2_downloader.py:46
 msgid ""
 "Looks like we're running in the background. We don't want that, so we're "
 "exiting."
 msgstr ""
 
-#: tf2c_downloader.py:85 tf2c_downloader.py:163
+#: pf2_downloader.py:85 pf2_downloader.py:163
 msgid "[italic magenta]----- Exception details above this line -----"
 msgstr ""
 
-#: tf2c_downloader.py:86 tf2c_downloader.py:164
+#: pf2_downloader.py:86 pf2_downloader.py:164
 msgid ""
 "[bold red]:warning: The program has failed. Post a screenshot in #technical-"
 "issues on the Discord. :warning:[/bold red]"
 msgstr ""
 
-#: tf2c_downloader.py:97
+#: pf2_downloader.py:97
 msgid ""
-"Usage: TF2CDownloader [COMMAND] [PATH]\n"
+"Usage: PF2Downloader [COMMAND] [PATH]\n"
 "Installation utility for Pre Fortress 2.\n"
 "\n"
 "If no arguments are provided, the downloader will be ran in setup mode, in\n"
@@ -269,17 +269,17 @@ msgid ""
 "path will be the current work directory."
 msgstr ""
 
-#: tf2c_downloader.py:130
+#: pf2_downloader.py:130
 msgid "Pre Fortress 2 is already installed. Assuming a reinstallation."
 msgstr ""
 
-#: tf2c_downloader.py:145
+#: pf2_downloader.py:145
 msgid ""
 "Pre Fortress 2 isn't installed, cannot do an update. Consider using --install "
 "instead."
 msgstr ""
 
-#: tf2c_downloader.py:157
+#: pf2_downloader.py:157
 msgid "Unrecognised command. Try --help"
 msgstr ""
 

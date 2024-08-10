@@ -35,7 +35,7 @@ if not vars.SCRIPT_MODE and system() == 'Windows':
     kernel32 = ctypes.windll.kernel32
     kernel32.SetConsoleMode(kernel32.GetStdHandle(-10), (0x4|0x80|0x20|0x2|0x10|0x1|0x00|0x100))
 
-def sanity_check():
+def sanity_check() -> None:
     """
     This is mainly for Linux, because it's easy to launch it by double-clicking it, which would
     run it in the background and not show any output. PyInstaller has no way to force a terminal
@@ -63,7 +63,7 @@ else:
     gettext.bindtextdomain('pf2-downloader', 'locale')
 gettext.textdomain('pf2-downloader')
 
-def wizard():
+def wizard() -> None:
     try:
         sanity_check()
         if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
@@ -75,7 +75,7 @@ def wizard():
         # Check if the game is already installed, for the purposes of running update_version_file() safely
         if os.path.exists(vars.INSTALL_PATH + '/pf2/gameinfo.txt'):
             vars.INSTALLED = True
-            versions.update_version_file()
+            #versions.update_version_file()
 
         # All of the choice logic is handled in this function directly.
         gui.main_menu()
@@ -91,7 +91,7 @@ def wizard():
                 input(_("Press Enter to exit."))
             exit(1)
 
-def manual_script():
+def manual_script() -> None:
     try:
         if sys.argv[1] == "--help":
             print(_(

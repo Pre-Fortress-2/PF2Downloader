@@ -14,14 +14,14 @@ import vars
 import gui
 import versions
 
-def download(url, size):
+def download(url: string, size: int) -> None:
     free_space_check(size, 'temporary')
 
     run([vars.ARIA2C_BINARY, '--max-connection-per-server=16', '-UPF2Downloader2024-08-10', '--allow-piece-length-change=true', '--disable-ipv6=true', '--max-concurrent-downloads=16', '--optimize-concurrent-downloads=true', '--check-certificate=false', '--check-integrity=true', '--auto-file-renaming=false', '--continue=true', '--allow-overwrite=true', '--console-log-level=error', '--summary-interval=0', '--bt-hash-check-seed=false', '--seed-time=0',
     '-d' + vars.TEMP_PATH, url], check=True)
 
 
-def extract(filename, endpath, size):
+def extract(filename: str, endpath, size: int) -> None:
     free_space_check(size, 'permanent')
 
     gui.message(_("Extracting the downloaded archive, please wait patiently."), 1)
@@ -47,10 +47,10 @@ def extract(filename, endpath, size):
         for member in tqdm(iterable=tar.getmembers(), total=len(tar.getmembers())):
             tar.extract(member=member, path=endpath)
 
-def butler_verify(signature, gamedir, remote):
+def butler_verify(signature, gamedir, remote) -> None:
     run([vars.BUTLER_BINARY, 'verify', signature, gamedir, '--heal=archive,' + remote], check=True)
 
-def butler_patch(url, staging_dir, patchfilename, gamedir):
+def butler_patch(url, staging_dir, patchfilename, gamedir) -> None:
     if Path(staging_dir).exists() and Path(staging_dir).is_dir():
         rmtree(staging_dir)
     run([vars.ARIA2C_BINARY, '--max-connection-per-server=16', '-UTF2CDownloader2023-05-27', '--allow-piece-length-change=true', '--disable-ipv6=true', '--max-concurrent-downloads=16', '--optimize-concurrent-downloads=true', '--check-certificate=false', '--check-integrity=true', '--auto-file-renaming=false', '--continue=true', '--allow-overwrite=true', '--console-log-level=error', '--summary-interval=0', '--bt-hash-check-seed=false', '--seed-time=0',
@@ -61,7 +61,7 @@ def butler_patch(url, staging_dir, patchfilename, gamedir):
         rmtree(staging_dir)
 
 
-def pretty_size(bytes):
+def pretty_size(bytes: int) -> str:
     if bytes < 100:
         return _N("%s byte", "%s bytes", bytes) % bytes
     if bytes < 1000000:
@@ -75,7 +75,7 @@ def pretty_size(bytes):
     if bytes < 1000000000000000000:
         return _("%.2f PB") % (bytes/1000000000000000)
 
-def free_space_check(size, cat):
+def free_space_check(size: int, cat: str) -> None:
     if cat == 'temporary':
         if disk_usage(vars.TEMP_PATH)[2] < size:
             if gui.message_yes_no(_("You don't have enough free space in your computer's default temporary folder for this. A minimum of %s is required. Select alternate temporary folder?") % pretty_size(size), 1):
@@ -94,12 +94,12 @@ def free_space_check(size, cat):
         if disk_usage(vars.INSTALL_PATH)[2] < size and vars.INSTALLED is False:
             gui.message_end(_("You don't have enough free space for the extraction. A minimum of %s at your chosen extraction site is required.") % pretty_size(size), 1)
 
-def prepare_symlink():
+def prepare_symlink() -> None:
     for s in vars.TO_SYMLINK:
         if path.isfile(vars.INSTALL_PATH + s[1]) and not path.islink(vars.INSTALL_PATH + s[1]):
             os.remove(vars.INSTALL_PATH + s[1])
 
-def do_symlink():
+def do_symlink() -> None:
     if system() == "Windows":
         return
 
@@ -107,7 +107,7 @@ def do_symlink():
         if not path.isfile(vars.INSTALL_PATH + s[1]):
             os.symlink(vars.INSTALL_PATH + s[0], vars.INSTALL_PATH + s[1])
 
-def install():
+def install() -> None:
     version_json = versions.get_version_list()["versions"]
     last_key = list(version_json.keys())[-1]
     lastver = version_json[last_key]
@@ -125,7 +125,7 @@ def install():
 
     do_symlink()
 
-def update():
+def update() -> None:
     """
     The simplest part of all of this.
     We already know the user wants to update, can update, and the local version we get the patch from.

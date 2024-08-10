@@ -21,7 +21,7 @@ if system() == 'Windows':
 REGISTRY = 0
 REGISTRY_KEY = 0
 
-def sourcemods_path():
+def sourcemods_path() -> str:
     """
     Find path to sourcemod folder.
     """
@@ -50,7 +50,7 @@ def sourcemods_path():
         except Exception:
             return None
 
-def setup_path_script():
+def setup_path_script() -> None:
     """
     Choose setup path, but without user interference.
     """
@@ -65,7 +65,7 @@ def setup_path_script():
 
         gui.message(_("Installation location not specified, will assume: %s") % vars.INSTALL_PATH)
 
-def setup_path(manual_path):
+def setup_path(manual_path: str) -> None:
     """
     Choose setup path.
     """
@@ -95,7 +95,7 @@ def setup_path(manual_path):
             print(_("Reinitialising...\n"))
             setup_path(False)
 
-def setup_binaries():
+def setup_binaries() -> None:
     """
     Select paths for required binaries.
     """

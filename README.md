@@ -9,7 +9,10 @@ Forked from [TF2CDownloader](https://github.com/tf2classic/TF2CDownloader)
 
 ----
 
-Requires Rich, PyZstd, TQDM, and HTTPX to build.
+You must install dependencies by running the following command.
+```
+pip install -r requirements.txt
+```
 
 PyInstaller is used to build this into a single-file binary. A spec file is included.
 

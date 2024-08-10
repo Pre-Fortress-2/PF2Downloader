@@ -13,7 +13,7 @@ import downloads
 import versions
 import troubleshoot
 
-def message(msg, delay = 0):
+def message(msg: str, delay: int = 0) -> None:
     """
     Show a message to user.
     Delay stops program for specified amount of seconds.
@@ -46,7 +46,7 @@ def main_menu():
 
     elif user_choice == '3':
         version_json = versions.get_version_list()["versions"]
-        downloads.butler_verify(vars.SOURCE_URL + version_json[versions.get_installed_version()]["signature"], vars.INSTALL_PATH + '/tf2classic', vars.SOURCE_URL + version_json[versions.get_installed_version()]["heal"])
+        downloads.butler_verify(vars.SOURCE_URL + version_json[versions.get_installed_version()]["signature"], vars.INSTALL_PATH + '/pf2', vars.SOURCE_URL + version_json[versions.get_installed_version()]["heal"])
         message_end(_("The verification process has completed, and any corruption has been repaired."), 0)
 
     else:
@@ -54,7 +54,7 @@ def main_menu():
         main_menu()
 
 
-def message_yes_no(msg: str, default: bool = None, script_mode_default_override:bool = None) -> bool:
+def message_yes_no(msg: str, default: bool = None, script_mode_default_override: bool = None) -> bool:
     """
     Show a message to user and get yes/no answer.
     """
@@ -93,13 +93,13 @@ def message_yes_no(msg: str, default: bool = None, script_mode_default_override:
         print(_("[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"))
 
 
-def message_input(msg):
+def message_input(msg: str) -> str:
     """
     Show a message and get input from user.
     """
     return input(msg + ' >')
 
-def message_dir(msg):
+def message_dir(msg: str) -> str:
     """
     Show a message and ask for a directory.
     """
@@ -118,7 +118,7 @@ def message_dir(msg):
         except Exception:
             pass
 
-def message_end(msg, code):
+def message_end(msg: str, code: int) -> None:
     """
     Show a message and exit.
     """
