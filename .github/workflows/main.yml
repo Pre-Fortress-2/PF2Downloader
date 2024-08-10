@@ -67,7 +67,7 @@ jobs:
   release-builds:
     needs: [export-linux, export-windows]
     runs-on: ubuntu-20.04
-      steps:
+    steps:
       - uses: actions/checkout@v4
       - name: Download Linux Installer
         uses: actions/download-artifact@v4
