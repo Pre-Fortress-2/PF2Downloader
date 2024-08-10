@@ -2,3 +2,5 @@ httpx==0.27.0
 pyzstd==0.15.10
 rich==13.7.1
 tqdm==4.66.4
+pyinstaller==6.10.0
+python-gettext==5.0
