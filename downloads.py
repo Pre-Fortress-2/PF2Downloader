@@ -14,7 +14,7 @@ import vars
 import gui
 import versions
 
-def download(url: string, size: int) -> None:
+def download(url: str, size: int) -> None:
     free_space_check(size, 'temporary')
 
     run([vars.ARIA2C_BINARY, '--max-connection-per-server=16', '-UPF2Downloader2024-08-10', '--allow-piece-length-change=true', '--disable-ipv6=true', '--max-concurrent-downloads=16', '--optimize-concurrent-downloads=true', '--check-certificate=false', '--check-integrity=true', '--auto-file-renaming=false', '--continue=true', '--allow-overwrite=true', '--console-log-level=error', '--summary-interval=0', '--bt-hash-check-seed=false', '--seed-time=0',
