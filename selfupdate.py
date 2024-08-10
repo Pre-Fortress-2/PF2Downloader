@@ -27,9 +27,9 @@ def hash_script():
 def check_downloader_update():
     try:
         if system() == 'Windows':
-            remote_hash = httpx.get( vars.SOURCE_URL + "/pf2cd_sha512sum_windows" )
+            remote_hash = httpx.get( vars.SOURCE_URL + "/PF2DownloaderWindows_sha512" )
         else:
-            remote_hash = httpx.get( vars.SOURCE_URL + "/pf2cd_sha512sum_windows")
+            remote_hash = httpx.get( vars.SOURCE_URL + "/PF2DownloaderLinux_sha512")
     except httpx.RequestError:
         gui.message(_("WARNING: downloader failed to check itself for updates, potentially out-of-date."))
         return
