@@ -29,7 +29,7 @@ def main_menu():
         3 - Verify and repair game files"""))
     user_choice = input()
     if user_choice == '1':
-        message(_("Starting the download for Pre Fortress 2... You may see some errors that are safe to ignore."), 3)
+        message(_("Starting the download for Pre-Fortress 2... You may see some errors that are safe to ignore."), 3)
         downloads.install()
         troubleshoot.apply_blacklist()
         message_end(_("The installation has successfully completed. Remember to restart Steam!"), 0)
@@ -39,7 +39,7 @@ def main_menu():
             downloads.update()
             message_end(_("The update has successfully completed."), 0)
         else:
-            message(_("Starting the download for Pre Fortress 2... You may see some errors that are safe to ignore."), 3)
+            message(_("Starting the download for Pre-Fortress 2... You may see some errors that are safe to ignore."), 3)
             downloads.install()
             troubleshoot.apply_blacklist()
             message_end(_("The installation has successfully completed. Remember to restart Steam!"), 0)

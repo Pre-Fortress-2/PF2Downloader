@@ -22,6 +22,6 @@ The official build of Butler, as supplied by itch.io, is used.
 
 ----
 
-<a href="https://hosted.weblate.org/engage/tf2cdownloader/">
-<img src="https://hosted.weblate.org/widgets/tf2cdownloader/-/287x66-grey.png" alt="Translation status" />
+<a href="https://hosted.weblate.org/engage/pf2downloader/">
+<img src="https://hosted.weblate.org/widgets/pf2downloader/-/287x66-grey.png" alt="Translation status" />
 </a>

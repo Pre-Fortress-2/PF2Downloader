@@ -1,0 +1,446 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the pf2-downloader package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pf2-downloader\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-11 14:26-0400\n"
+"PO-Revision-Date: 2022-09-18 18:44+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: downloads.py:27
+msgid "Extracting the downloaded archive, please wait patiently."
+msgstr "A letöltött archívum kicsomagolása, kérlek várj türelemmel."
+
+#: downloads.py:58
+#, fuzzy
+msgid "Patching your game with the new update, please wait patiently."
+msgstr "A letöltött archívum kicsomagolása, kérlek várj türelemmel."
+
+#: downloads.py:66
+#, python-format
+msgid "%s byte"
+msgid_plural "%s bytes"
+msgstr[0] "%s bájt"
+msgstr[1] "%s bájt"
+
+#: downloads.py:68
+#, python-format
+msgid "%.2f kB"
+msgstr "%.2f kB"
+
+#: downloads.py:70
+#, python-format
+msgid "%.2f MB"
+msgstr "%.2f MB"
+
+#: downloads.py:72
+#, python-format
+msgid "%.2f GB"
+msgstr "%.2f GB"
+
+#: downloads.py:74
+#, python-format
+msgid "%.2f TB"
+msgstr "%.2f TB"
+
+#: downloads.py:76
+#, python-format
+msgid "%.2f PB"
+msgstr "%.2f PB"
+
+#: downloads.py:81
+#, fuzzy, python-format
+msgid ""
+"You don't have enough free space in your computer's default temporary folder "
+"for this. A minimum of %s is required. Select alternate temporary folder?"
+msgstr ""
+"Nincs elég tárhelyed, hogy kicsomagold a Pre-Fortress 2-ot. %s minimum tárhely "
+"szükséges az általad választott kicsomagolási helyen."
+
+#: downloads.py:88
+msgid ""
+"Still not enough space at specified path. Retry, and select a different "
+"drive if available."
+msgstr ""
+
+#: downloads.py:90
+msgid "Folder selection prompt closed without choosing any path. Exiting..."
+msgstr ""
+
+#: downloads.py:95
+#, python-format
+msgid ""
+"You don't have enough free space for the extraction. A minimum of %s at your "
+"chosen extraction site is required."
+msgstr ""
+"Nincs elég tárhelyed, hogy kicsomagold a Pre-Fortress 2-ot. %s minimum tárhely "
+"szükséges az általad választott kicsomagolási helyen."
+
+#: downloads.py:117
+msgid "Getting the archive..."
+msgstr "Archívum megszerzése..."
+
+#: downloads.py:122
+msgid "The specified extraction location does not exist."
+msgstr "A meghatározott kicsomagolási hely nem létezik."
+
+#: gui.py:26
+msgid ""
+"Welcome to PF2Downloader. Enter a number to continue.\n"
+"\n"
+"        1 - Install or reinstall the game\n"
+"        2 - Check for and apply any available updates\n"
+"        3 - Verify and repair game files"
+msgstr ""
+
+#: gui.py:32 gui.py:42
+#, fuzzy
+msgid ""
+"Starting the download for Pre-Fortress 2... You may see some errors that are "
+"safe to ignore."
+msgstr ""
+"Pre-Fortress 2 letöltésének megkezdése... Lehet, hogy látsz néhány hibát amit "
+"nyugodtan mellőzhetsz."
+
+#: gui.py:35 gui.py:45 pf2_downloader.py:135
+msgid "The installation has successfully completed. Remember to restart Steam!"
+msgstr "A telepítés sikeres. Ne felejtsd újraindítani a Steam-et!"
+
+#: gui.py:40 pf2_downloader.py:156
+msgid "The update has successfully completed."
+msgstr "A frissítés sikeres."
+
+#: gui.py:50
+msgid ""
+"The verification process has completed, and any corruption has been repaired."
+msgstr ""
+
+#: gui.py:53
+msgid "Invalid choice. Please retry."
+msgstr ""
+
+#: gui.py:65
+msgid "The application is in script mode, using default choice."
+msgstr ""
+
+#: gui.py:72
+msgid "yes"
+msgstr "igen"
+
+#: gui.py:73
+msgid "no"
+msgstr "nem"
+
+#: gui.py:79
+msgid " {y/n}"
+msgstr " {i/n}"
+
+#: gui.py:81
+msgid " {Y/n}"
+msgstr " {I/n}"
+
+#: gui.py:83
+msgid " {y/N}"
+msgstr " {i/N}"
+
+#: gui.py:93
+msgid ""
+"[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
+msgstr ""
+"[bold blue]Válaszolj kérlek egy 'igen' vagy 'nem'-mel (vagy 'i' vagy 'n').[/"
+"bold blue]"
+
+#: gui.py:120 pf2_downloader.py:91
+msgid "Press Enter to exit."
+msgstr "Kilépéshez nyomd meg az Enter billentyűt."
+
+#: pf2_downloader.py:46
+msgid ""
+"Looks like we're running in the background. We don't want that, so we're "
+"exiting."
+msgstr ""
+"Úgy néz ki, hogy a háttérben futtatod a programot. Ezt mi nem akarjuk, "
+"szóval kilépünk."
+
+#: pf2_downloader.py:86 pf2_downloader.py:165
+msgid "[italic magenta]----- Exception details above this line -----"
+msgstr "[italic magenta]----- Kifogás részletei e sor fölött -----"
+
+#: pf2_downloader.py:87 pf2_downloader.py:166
+msgid ""
+"[bold red]:warning: The program has failed. Post a screenshot in #technical-"
+"issues on the Discord. :warning:[/bold red]"
+msgstr ""
+"[bold red]:warning: A program sikertelen. Készíts egy képernyőképet és küld "
+"el a #technical-issues csatornába a hivatalos Discord szerveren (de csak "
+"Angolul). :warning:[/bold red]"
+
+#: pf2_downloader.py:89
+msgid "[bold]You are safe to close this window."
+msgstr "[bold]Mostmár biztonságban bezárhatod ezt az ablakot."
+
+#: pf2_downloader.py:98
+#, fuzzy
+msgid ""
+"Usage: PF2Downloader [COMMAND] [PATH]\n"
+"Installation utility for Pre-Fortress 2\n"
+"Forked from TF2CDownloader\n"
+"\n"
+"If no arguments are provided, the downloader will be ran in setup mode, in\n"
+"which a series of questions will be asked to install the game for a regular\n"
+"user. This is what's used when opening the downloader from the desktop.\n"
+"\n"
+"Valid commands:\n"
+"  --install           installs Pre-Fortress 2 into a new folder inside PATH\n"
+"  --update            updates the pre-existing Pre-Fortress 2 installation "
+"in its\n"
+"                      folder inside PATH\n"
+"  --help              shows this\n"
+"\n"
+"PATH is the folder containing Pre-Fortress 2's folder. This is usually the\n"
+"sourcemods folder for clients, or the Source dedicated server folder for\n"
+"servers.\n"
+"\n"
+"If PATH isn't provided, then it'll be replaced with the detected path to "
+"the\n"
+"sourcemods folder in the Steam directory. If it couldn't be detected, then "
+"the\n"
+"path will be the current work directory."
+msgstr ""
+"Kezelés: PF2Downloader [COMMAND] [PATH]\n"
+"A Pre-Fortress 2 telepítő alkalmatossága.\n"
+"\n"
+"Ha nem lett megadva semmilyen parancs, a letöltő telepítés módban lesz\n"
+"futtatva, ahol egy kérdés sorozat lesz feltéve, hogy egy átlag "
+"felhasználónak\n"
+"legyen telepítve a játék. Ez az ami használva van, ha a program az "
+"asztalról\n"
+"van megnyitva.\n"
+"\n"
+"Érvényes parancsok:\n"
+"  --install           telepíti a Pre-Fortress 2-ot egy új mappába a PATH-on "
+"belül\n"
+"  --update            frissíti a már létező Pre-Fortress 2 telepítést a\n"
+"                      PATH-on belül lévő mappában\n"
+"  --help              ezt mutatja\n"
+"\n"
+"A PATH az a mappa amiben a Pre-Fortress 2 mappája van. Ez általában\n"
+"a sourcemods mappa a klienseknek, vagy a Souce dedikált szerverek\n"
+"mappa a szervereknek.\n"
+"\n"
+"Ha nincs megadva PATH, akkor a sourcemods mappához észlelt út lesz megadva.\n"
+"Ha ez sincs észlelve, akkor a jelenlegi munkakönyvtár lesz az elérési "
+"útvonal."
+
+#: pf2_downloader.py:132
+#, fuzzy
+msgid "Pre-Fortress 2 is already installed. Assuming a reinstallation."
+msgstr "A Pre-Fortress 2 már telepítve van. Újratelepítés feltételezése..."
+
+#: pf2_downloader.py:147
+#, fuzzy
+msgid ""
+"Pre-Fortress 2 isn't installed, cannot do an update. Consider using --"
+"install instead."
+msgstr ""
+"A Pre-Fortress 2 nincs telepítve, így nem lehet frissíteni. Használd inkább az "
+"--install parancsot."
+
+#: pf2_downloader.py:159
+msgid "Unrecognised command. Try --help"
+msgstr "Ismeretlen parancs. Próbáld a --help parancsot"
+
+#: selfupdate.py:34
+msgid ""
+"WARNING: downloader failed to check itself for updates, potentially out-of-"
+"date."
+msgstr ""
+
+#: selfupdate.py:41
+msgid "PF2Downloader appears to be up-to-date."
+msgstr ""
+
+#: selfupdate.py:42
+#, fuzzy
+msgid ""
+"PF2Downloader has an update available. Your current version may not work "
+"properly. Do you want to install it?"
+msgstr "Egy frissítés érhető el a játékodhoz. Szeretnéd telepíteni?"
+
+#: selfupdate.py:43
+msgid ""
+"Delete PF2Downloader, then redownload and relaunch it from https://"
+"prefortress.com/download"
+msgstr ""
+
+#: selfupdate.py:45
+msgid "PF2Downloader out-of-date."
+msgstr ""
+
+#: selfupdate.py:47
+msgid "User chose to skip update. Things may be broken."
+msgstr ""
+
+#: setup.py:66
+#, fuzzy, python-format
+msgid "Installation location not specified, will assume: %s"
+msgstr "Telepítési hely nem meghatározva, telepítési hely: %s"
+
+#: setup.py:79
+#, python-format
+msgid "Sourcemods folder was automatically found at: %s"
+msgstr "A sourcemods mappa automatikusan meglelve itt: %s"
+
+#: setup.py:80
+msgid "Does that look correct?"
+msgstr ""
+
+#: setup.py:86
+msgid ""
+"WARNING: Steam's sourcemods folder has not been found, or you chose not to "
+"use it."
+msgstr ""
+"FIGYELEM: Nem lett megtalálva a Steam sourcemods mappája, vagy te döntöttél "
+"úgy, hogy nem használod azt."
+
+#: setup.py:87
+#, python-format
+msgid ""
+"Would you like to extract in %s? You must move it to your sourcemods "
+"manually."
+msgstr ""
+"Szeretnéd ide kicsomagolni: %s? Sajátkezüleg kell majd betenned a sourcemods "
+"mappádba."
+
+#: setup.py:91
+#, fuzzy
+msgid ""
+"Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
+msgstr "Add meg a helyet ahova szeretnéd a Pre-Fortress 2-ot telepíteni.\n"
+
+#: setup.py:94
+#, fuzzy, python-format
+msgid ""
+"Pre-Fortress 2 will be installed in %s\n"
+"Do you accept?"
+msgstr ""
+"A Pre-Fortress 2 ide lesz telepítve: %s\n"
+"Elfogadod?"
+
+#: setup.py:95
+msgid "Reinitialising...\n"
+msgstr "Újrainicializálás...\n"
+
+#: versions.py:20
+msgid ""
+"Could not get version list. If your internet connection is fine, the servers "
+"could be having technical issues."
+msgstr ""
+"Verziólista megszerzése sikertelen. Ha rendben van az internet kapcsolatod, "
+"akkor a szerverekkel lehet technikai probléma."
+
+#: versions.py:44
+msgid ""
+"We can't read the version of your installation. It could be corrupted. Do "
+"you want to reinstall the game?"
+msgstr ""
+"Játékverzió beolvasása sikertelen. Lehetséges, hogy sérült. Szeretnéd "
+"újratelepíteni a játékot?"
+
+#: versions.py:47 versions.py:67 versions.py:95 versions.py:103 versions.py:114
+msgid "We have nothing to do. Goodbye!"
+msgstr "Semmit se kell csinálnunk. Viszlát!"
+
+#: versions.py:64
+#, fuzzy
+msgid ""
+"No game installation detected at given sourcemods path. Do you want to "
+"install the game?"
+msgstr ""
+"Játékverzió beolvasása sikertelen. Lehetséges, hogy sérült. Szeretnéd "
+"újratelepíteni a játékot?"
+
+#: versions.py:92
+msgid ""
+"The version of your installation is unknown. It could be corrupted. Do you "
+"want to reinstall the game?"
+msgstr ""
+"A játékod verziószáma ismeretlen. Lehetséges, hogy sérült. Szeretnéd "
+"újratelepíteni a játékot?"
+
+#: versions.py:100
+msgid ""
+"We think we've found an existing up-to-date installation of the game. Do you "
+"want to reinstall it?"
+msgstr ""
+"Úgy tűnik találtunk egy létező friss játék telepítést. Szeretnéd "
+"újratelepíteni?"
+
+#: versions.py:108
+#, fuzzy
+msgid "An update is available for Pre-Fortress 2. Do you want to install it?"
+msgstr "Egy frissítés érhető el a játékodhoz. Szeretnéd telepíteni?"
+
+#: versions.py:109
+msgid ""
+"If running, please close your game client and/or game launcher. Confirm once "
+"they're closed."
+msgstr ""
+
+#: versions.py:112
+msgid "Exiting..."
+msgstr ""
+
+#: versions.py:116
+#, fuzzy
+msgid ""
+"An update is available, but no patch could be found for your game version. "
+"Try reinstalling?"
+msgstr "Egy frissítés érhető el a játékodhoz. Szeretnéd telepíteni?"
+
+#~ msgid "Applying safety blacklist..."
+#~ msgstr "Biztonsági feketelistára helyezés..."
+
+#~ msgid "WARNING: could not apply safety blacklist."
+#~ msgstr "FIGYELEM: sikertelen biztonsági feketelistára helyezés."
+
+#, python-format
+#~ msgid ""
+#~ "You don't have enough free space for the download. A minimum of %s on "
+#~ "your primary drive is required."
+#~ msgstr ""
+#~ "Nincs elég tárhelyed, hogy letöltsd a Pre-Fortress 2-ot. %s minimum tárhely "
+#~ "szükséges az elsődleges merevlemezeden."
+
+#, python-format
+#~ msgid "Getting %s patch..."
+#~ msgid_plural "Getting %s patches..."
+#~ msgstr[0] "%s javítás megszerzése..."
+#~ msgstr[1] "%s javítás megszerzése..."
+
+#, python-format
+#~ msgid "Downloading patch %s to %s..."
+#~ msgstr "%s javítás letöltése ide: %s..."
+
+#~ msgid ""
+#~ "It's the recommended installation location. Would you like to install "
+#~ "Pre-Fortress 2 there?"
+#~ msgstr ""
+#~ "Ez a javasolt telepítési hely. Szeretnéd oda telepíteni a Pre-Fortress 2-ot?"
+
+#~ msgid "You need to install Aria2 to use this script."
+#~ msgstr "Ehhez a script-hez a következőt kell telepítened: Aria2."
+
+#~ msgid "In that case, do you want to reinstall completely?"
+#~ msgstr "Ebben az esetben, szeretnéd teljesen újratelepíteni?"

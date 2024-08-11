@@ -1,0 +1,476 @@
+#
+# Technochips <thetechnochips@protonmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pf2-downloader\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-11 14:26-0400\n"
+"PO-Revision-Date: 2023-05-02 16:53+0000\n"
+"Last-Translator: Technochips <thetechnochips@protonmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/pf2downloader/"
+"pf2downloader/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.18-dev\n"
+
+#: downloads.py:27
+msgid "Extracting the downloaded archive, please wait patiently."
+msgstr "Extraction de l'archive téléchargée, veuillez patentier."
+
+#: downloads.py:58
+msgid "Patching your game with the new update, please wait patiently."
+msgstr "Patchement du jeu avec la nouvelle mise à jour, veuillez patienter."
+
+#: downloads.py:66
+#, python-format
+msgid "%s byte"
+msgid_plural "%s bytes"
+msgstr[0] "%s octet"
+msgstr[1] "%s octets"
+
+#: downloads.py:68
+#, python-format
+msgid "%.2f kB"
+msgstr "%.2f ko"
+
+#: downloads.py:70
+#, python-format
+msgid "%.2f MB"
+msgstr "%.2f Mo"
+
+#: downloads.py:72
+#, python-format
+msgid "%.2f GB"
+msgstr "%.2f Go"
+
+#: downloads.py:74
+#, python-format
+msgid "%.2f TB"
+msgstr "%.2f To"
+
+#: downloads.py:76
+#, python-format
+msgid "%.2f PB"
+msgstr "%.2f Po"
+
+#: downloads.py:81
+#, python-format
+msgid ""
+"You don't have enough free space in your computer's default temporary folder "
+"for this. A minimum of %s is required. Select alternate temporary folder?"
+msgstr ""
+"Vous n'avez pas assez d'espace libre pour l'extraction. Vous devez avoir au "
+"minimum %s d'espace sur l'emplacement d'installation. Sélectionner un "
+"dossier temporaire alternatif ?"
+
+#: downloads.py:88
+msgid ""
+"Still not enough space at specified path. Retry, and select a different "
+"drive if available."
+msgstr ""
+"Toujours pas assez d'escape sur le chemin spécifié. Réessayez, et "
+"sélectionnez un disque différent si disponible."
+
+#: downloads.py:90
+msgid "Folder selection prompt closed without choosing any path. Exiting..."
+msgstr ""
+"L'invite de sélection de dossier a été fermée sans avoir choisi de chemins. "
+"Fermeture..."
+
+#: downloads.py:95
+#, python-format
+msgid ""
+"You don't have enough free space for the extraction. A minimum of %s at your "
+"chosen extraction site is required."
+msgstr ""
+"Vous n'avez pas assez d'espace libre pour l'extraction. Vous devez avoir au "
+"minimum %s d'espace sur l'emplacement d'installation."
+
+#: downloads.py:117
+msgid "Getting the archive..."
+msgstr "Récupération de l'archive..."
+
+#: downloads.py:122
+msgid "The specified extraction location does not exist."
+msgstr "L'emplacement d'extraction spécifié n'existe pas."
+
+#: gui.py:26
+#, fuzzy
+msgid ""
+"Welcome to PF2Downloader. Enter a number to continue.\n"
+"\n"
+"        1 - Install or reinstall the game\n"
+"        2 - Check for and apply any available updates\n"
+"        3 - Verify and repair game files"
+msgstr ""
+"Bienvenue sur PF2Downloader. Entrez un nombre pour continuer.\n"
+"\n"
+"        1 - Installer ou réinstaller le jeu\n"
+"        2 - Rechercher et appliquer des mises à jour\n"
+"        3 - Vérifier et réparer les fichiers du jeu"
+
+#: gui.py:32 gui.py:42
+#, fuzzy
+msgid ""
+"Starting the download for Pre-Fortess 2... You may see some errors that are "
+"safe to ignore."
+msgstr ""
+"Téléchargement de Pre-Fortess 2... Vous pouvez voir certaines erreurs qui "
+"peuvent être parfaitement ignorées."
+
+#: gui.py:35 gui.py:45 pf2_downloader.py:135
+msgid "The installation has successfully completed. Remember to restart Steam!"
+msgstr "L'installation est terminée. N'oubliez pas de redémarrer Steam !"
+
+#: gui.py:40 pf2_downloader.py:156
+msgid "The update has successfully completed."
+msgstr "La mise à jour est terminée."
+
+#: gui.py:50
+msgid ""
+"The verification process has completed, and any corruption has been repaired."
+msgstr ""
+
+#: gui.py:53
+msgid "Invalid choice. Please retry."
+msgstr "Choix invalide. Veuillez réessayer."
+
+#: gui.py:65
+msgid "The application is in script mode, using default choice."
+msgstr "L'application est en mode script, utilisation du choix par défaut."
+
+#: gui.py:72
+msgid "yes"
+msgstr "oui"
+
+#: gui.py:73
+msgid "no"
+msgstr "non"
+
+#: gui.py:79
+msgid " {y/n}"
+msgstr " {o/n}"
+
+#: gui.py:81
+msgid " {Y/n}"
+msgstr " {O/n}"
+
+#: gui.py:83
+msgid " {y/N}"
+msgstr " {o/N}"
+
+#: gui.py:93
+msgid ""
+"[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
+msgstr "[bold blue]Répondez avec 'oui' ou 'non' ('o' ou 'n').[/bold blue]"
+
+#: gui.py:120 pf2_downloader.py:91
+msgid "Press Enter to exit."
+msgstr "Appuyez sur Entrée pour sortir."
+
+#: pf2_downloader.py:46
+msgid ""
+"Looks like we're running in the background. We don't want that, so we're "
+"exiting."
+msgstr ""
+"On dirait qu'on est en train de tourner en arrière plan. On ne veut pas ça, "
+"donc on sort."
+
+#: pf2_downloader.py:86 pf2_downloader.py:165
+msgid "[italic magenta]----- Exception details above this line -----"
+msgstr ""
+"[italic magenta]----- Détails des exceptions au dessus de cette ligne -----"
+
+#: pf2_downloader.py:87 pf2_downloader.py:166
+msgid ""
+"[bold red]:warning: The program has failed. Post a screenshot in #technical-"
+"issues on the Discord. :warning:[/bold red]"
+msgstr ""
+"[bold red]:warning: Le programme a échoué. Postez un screenshot dans "
+"#technical-issues sur le Discord (en anglais seulement). :warning:[/bold red]"
+
+#: pf2_downloader.py:89
+msgid "[bold]You are safe to close this window."
+msgstr "[bold]Vous pouvez fermer cette fenêtre."
+
+#: pf2_downloader.py:98
+#, fuzzy
+msgid ""
+"Usage: PF2Downloader [COMMAND] [PATH]\n"
+"Installation utility for Pre-Fortess 2\n"
+"Forked from TF2CDownloader\n"
+"\n"
+"If no arguments are provided, the downloader will be ran in setup mode, in\n"
+"which a series of questions will be asked to install the game for a regular\n"
+"user. This is what's used when opening the downloader from the desktop.\n"
+"\n"
+"Valid commands:\n"
+"  --install           installs Pre-Fortess 2 into a new folder inside PATH\n"
+"  --update            updates the pre-existing Pre-Fortess 2 installation "
+"in its\n"
+"                      folder inside PATH\n"
+"  --help              shows this\n"
+"\n"
+"PATH is the folder containing Pre-Fortess 2's folder. This is usually the\n"
+"sourcemods folder for clients, or the Source dedicated server folder for\n"
+"servers.\n"
+"\n"
+"If PATH isn't provided, then it'll be replaced with the detected path to "
+"the\n"
+"sourcemods folder in the Steam directory. If it couldn't be detected, then "
+"the\n"
+"path will be the current work directory."
+msgstr ""
+"Utilisation : PF2Downloader [COMMANDE] [CHEMIN]\n"
+"Utilité d'installation pour Pre-Fortess 2.\n"
+"\n"
+"Si aucun argument n'est fourni, le téléchargeur sera lancé en mode\n"
+"d'installation, où une série de questions sera posée pour installer le jeu\n"
+"pour un utilisateur normal. C'est ce qui est utilisé en ouvrant le\n"
+"téléchargeur depuis le bureau.\n"
+"\n"
+"Commandes valides :\n"
+"  --install           installe Pre-Fortess 2 dans un nouveau dossier dans "
+"CHEMIN\n"
+"  --update            met à jour l'installation préexistante de Pre-Fortess 2\n"
+"                      dans son dossier à l'intérieur de CHEMIN\n"
+"  --help              montre ceci\n"
+"\n"
+"PATH est le dossier contenant le dossier de Pre-Fortess 2. C'est normalement "
+"le\n"
+"dossier sourcemods pour les clietns, ou le dossier du serveur dédié Source\n"
+"pour les serveurs.\n"
+"\n"
+"Si CHEMIN n'est pas fourni, alors il sera remplacé avec le chemin détecté "
+"vers\n"
+"le dossier sourcemods dans les dossiers de Steam. Si il n'a pas pu être\n"
+"détecté, alors le chemin sera le dossier de travail actuel."
+
+#: pf2_downloader.py:132
+#, fuzzy
+msgid "Pre-Fortess 2 is already installed. Assuming a reinstallation."
+msgstr "Pre-Fortess 2 est déjà installé. Réinstallation..."
+
+#: pf2_downloader.py:147
+#, fuzzy
+msgid ""
+"Pre-Fortess 2 isn't installed, cannot do an update. Consider using --"
+"install instead."
+msgstr ""
+"Pre-Fortess 2 n'est pas installé, impossible de mettre à jour. Essayez "
+"d'utiliser --installer à la place."
+
+#: pf2_downloader.py:159
+msgid "Unrecognised command. Try --help"
+msgstr "Commande non reconnue. Essayez --help"
+
+#: selfupdate.py:34
+msgid ""
+"WARNING: downloader failed to check itself for updates, potentially out-of-"
+"date."
+msgstr ""
+"ATTENTION : le téléchargeur n'a pas pu vérifier ses propres mises à jour, la "
+"version est potentiellement obsolète."
+
+#: selfupdate.py:41
+#, fuzzy
+msgid "PF2Downloader appears to be up-to-date."
+msgstr "PF2Downloader semble être obsolète."
+
+#: selfupdate.py:42
+#, fuzzy
+msgid ""
+"PF2Downloader has an update available. Your current version may not work "
+"properly. Do you want to install it?"
+msgstr ""
+"Une mise à jour pour PF2Downloader est disponible. Votre version actuelle "
+"pourrait mal fonctionner. Voulez-vous l'installer ?"
+
+#: selfupdate.py:43
+#, fuzzy
+msgid ""
+"Delete PF2Downloader, then redownload and relaunch it from https://"
+"prefortress.com/download"
+msgstr ""
+"Supprimez PF2Downloader, puis retéléchargez-le depuis https://"
+"prefortress.com/download"
+
+#: selfupdate.py:45
+#, fuzzy
+msgid "PF2Downloader out-of-date."
+msgstr "PF2Downloader obsolète."
+
+#: selfupdate.py:47
+msgid "User chose to skip update. Things may be broken."
+msgstr ""
+"L'utilisateur a choisi d'ignorer la mise à jour. Les choses pourraient mal "
+"fonctionner."
+
+#: setup.py:66
+#, python-format
+msgid "Installation location not specified, will assume: %s"
+msgstr ""
+"L'emplacement d'installation n'a pas été précisée, ce chemin sera utilisé : "
+"%s"
+
+#: setup.py:79
+#, python-format
+msgid "Sourcemods folder was automatically found at: %s"
+msgstr "Le dossier sourcemods a été automatiquement trouvé ici : %s"
+
+#: setup.py:80
+msgid "Does that look correct?"
+msgstr "Cela semble-t-il correct ?"
+
+#: setup.py:86
+msgid ""
+"WARNING: Steam's sourcemods folder has not been found, or you chose not to "
+"use it."
+msgstr ""
+"ATTENTION : Le dossier sourcemods de Steam n'a pas été trouvé, ou alors vous "
+"avez choisi de ne pas l'utiliser."
+
+#: setup.py:87
+#, python-format
+msgid ""
+"Would you like to extract in %s? You must move it to your sourcemods "
+"manually."
+msgstr ""
+"Voulez-vous l'extraire dans %s ? Vous devez ensuite le déplacer dans votre "
+"dossier sourcemods manuellement."
+
+#: setup.py:91
+#, fuzzy
+msgid ""
+"Please, enter the location in which Pre-Fortess 2 will be installed to.\n"
+msgstr "Veuillez saisir l'emplacement où va être installé Pre-Fortess 2.\n"
+
+#: setup.py:94
+#, fuzzy, python-format
+msgid ""
+"Pre-Fortess 2 will be installed in %s\n"
+"Do you accept?"
+msgstr ""
+"Pre-Fortess 2 sera installé ici : %s\n"
+"Est-ce correct ?"
+
+#: setup.py:95
+msgid "Reinitialising...\n"
+msgstr "Réinitialisation…\n"
+
+#: versions.py:20
+msgid ""
+"Could not get version list. If your internet connection is fine, the servers "
+"could be having technical issues."
+msgstr ""
+"Impossible de récupérer la liste de version. Si votre connexion internet est "
+"bonne, les serveurs pourraient avoir des problèmes techniques."
+
+#: versions.py:44
+msgid ""
+"We can't read the version of your installation. It could be corrupted. Do "
+"you want to reinstall the game?"
+msgstr ""
+"Impossible de vérifier la version de votre installation. Elle pourrait-être "
+"corrompue. Voulez-vous réinstaller le jeu ?"
+
+#: versions.py:47 versions.py:67 versions.py:95 versions.py:103 versions.py:114
+msgid "We have nothing to do. Goodbye!"
+msgstr "On a rien à faire. Au revoir !"
+
+#: versions.py:64
+msgid ""
+"No game installation detected at given sourcemods path. Do you want to "
+"install the game?"
+msgstr ""
+"Aucune installation n'a été détéctée dans le chemin sourcemods donné. Voulez-"
+"vous installer le jeu ?"
+
+#: versions.py:92
+msgid ""
+"The version of your installation is unknown. It could be corrupted. Do you "
+"want to reinstall the game?"
+msgstr ""
+"La version actuelle de votre installation est inconnue. Elle pourrait-être "
+"corrompue. Voulez-vous réinstaller le jeu ?"
+
+#: versions.py:100
+msgid ""
+"We think we've found an existing up-to-date installation of the game. Do you "
+"want to reinstall it?"
+msgstr ""
+"Une installation à jour du jeu semble avoir été trouvée. Voulez-vous "
+"réinstaller le jeu ?"
+
+#: versions.py:108
+#, fuzzy
+msgid "An update is available for Pre-Fortess 2. Do you want to install it?"
+msgstr ""
+"Une mise à jour est disponible pour Pre-Fortess 2. Voulez-vous l'installer ?"
+
+#: versions.py:109
+msgid ""
+"If running, please close your game client and/or game launcher. Confirm once "
+"they're closed."
+msgstr ""
+"S'ils sont en train de tourner, veuillez fermer le jeu et/ou le lanceur. "
+"Confirmez lorsqu'ils sont fermés."
+
+#: versions.py:112
+msgid "Exiting..."
+msgstr "Fermeture..."
+
+#: versions.py:116
+msgid ""
+"An update is available, but no patch could be found for your game version. "
+"Try reinstalling?"
+msgstr ""
+"Une mise à jour est disponible, mais aucun patch n'a été trouvé pour votre "
+"version actuelle. Voulez-vous réinstaller ?"
+
+#~ msgid "Applying safety blacklist..."
+#~ msgstr "Application de la liste noir de sécurité..."
+
+#~ msgid "WARNING: could not apply safety blacklist."
+#~ msgstr "ATTENTION : impossible d'appliquer la liste noir de sécurité."
+
+#, python-format
+#~ msgid ""
+#~ "You don't have enough free space for the download. A minimum of %s on "
+#~ "your primary drive is required."
+#~ msgstr ""
+#~ "Vous n'avez pas assez d'espace libre pour le téléchargement. Vous devez "
+#~ "avoir au minimum %s d'espace libre sur votre disque dur principale."
+
+#, python-format
+#~ msgid "Getting %s patch..."
+#~ msgid_plural "Getting %s patches..."
+#~ msgstr[0] "Récupération de %s patch..."
+#~ msgstr[1] "Récupération de %s patchs..."
+
+#, python-format
+#~ msgid "Downloading patch %s to %s..."
+#~ msgstr "Téléchargement du patch %s vers %s..."
+
+#~ msgid ""
+#~ "It's the recommended installation location. Would you like to install "
+#~ "Pre-Fortress 2 there?"
+#~ msgstr ""
+#~ "C'est l'endroit d'installation recommandé. Voulez-vous installer "
+#~ "Pre-Fortress 2 ici ?"
+
+#~ msgid "You need to install Aria2 to use this script."
+#~ msgstr "Vous devez installer Aria2 pour utiliser ce script."
+
+#~ msgid "In that case, do you want to reinstall completely?"
+#~ msgstr "Dans ce cas, voulez-vous complètement réinstaller le jeu ?"
+
+#~ msgid "You need to install Zstd to use this script."
+#~ msgstr "Vous devez installer Zstd pour utiliser ce script."
+
+#~ msgid "No migration necessary!"
+#~ msgstr "Aucune migration nécessaire !"

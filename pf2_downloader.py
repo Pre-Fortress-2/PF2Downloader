@@ -96,7 +96,7 @@ def manual_script() -> None:
         if sys.argv[1] == "--help":
             print(_(
             '''Usage: PF2Downloader [COMMAND] [PATH]
-Installation utility for Pre Fortress 2
+Installation utility for Pre-Fortress 2
 Forked from TF2CDownloader
 
 If no arguments are provided, the downloader will be ran in setup mode, in
@@ -104,12 +104,12 @@ which a series of questions will be asked to install the game for a regular
 user. This is what's used when opening the downloader from the desktop.
 
 Valid commands:
-  --install           installs Pre Fortress 2 into a new folder inside PATH
-  --update            updates the pre-existing Pre Fortress 2 installation in its
+  --install           installs Pre-Fortress 2 into a new folder inside PATH
+  --update            updates the pre-existing Pre-Fortress 2 installation in its
                       folder inside PATH
   --help              shows this
 
-PATH is the folder containing Pre Fortress 2's folder. This is usually the
+PATH is the folder containing Pre-Fortress 2's folder. This is usually the
 sourcemods folder for clients, or the Source dedicated server folder for
 servers.
 
@@ -129,7 +129,7 @@ path will be the current work directory.'''
                 vars.INSTALLED = True
 
             if vars.INSTALLED:
-                gui.message(_("Pre Fortress 2 is already installed. Assuming a reinstallation."))
+                gui.message(_("Pre-Fortress 2 is already installed. Assuming a reinstallation."))
             downloads.install()
             troubleshoot.apply_blacklist()
             print(_("The installation has successfully completed. Remember to restart Steam!"))
@@ -144,7 +144,7 @@ path will be the current work directory.'''
                 vars.INSTALLED = True
 
             if not vars.INSTALLED:
-                print(_("Pre Fortress 2 isn't installed, cannot do an update. Consider using --install instead."))
+                print(_("Pre-Fortress 2 isn't installed, cannot do an update. Consider using --install instead."))
                 exit(1)
             else:
                 vars.INSTALLED = versions.update_version_file()
