@@ -45,9 +45,11 @@ jobs:
           sudo apt update
           sudo apt install gettext
           pip install -r requirements.txt
-      - name: Build Linux
+      - name: Generate Localizations
         run: |
           ./GenerateMO.sh
+      - name: Build Linux
+        run: |
           ./CompileLinux.sh
           mv dist/pf2_downloader PF2DownloaderLinux
       - name: Generate SHA512
