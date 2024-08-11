@@ -3,9 +3,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate-mo:
-    name: Generate Translation Files
-    runs-on
   export-windows:
     name: Windows Export
     runs-on: windows-latest
