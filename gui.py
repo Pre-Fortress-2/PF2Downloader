@@ -92,13 +92,6 @@ def message_yes_no(msg: str, default: bool = None, script_mode_default_override:
             return valid[choice]
         print(_("[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"))
 
-
-def message_input(msg: str) -> str:
-    """
-    Show a message and get input from user.
-    """
-    return input(msg + ' >')
-
 def message_dir(msg: str) -> str:
     """
     Show a message and ask for a directory.
