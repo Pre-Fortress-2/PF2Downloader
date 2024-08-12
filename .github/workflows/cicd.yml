@@ -31,8 +31,8 @@ jobs:
           Compress-Archive -Path ${{ env.NAME_UPPER }}DownloaderWindows.exe -DestinationPath ${{ env.NAME_UPPER }}DownloaderWindows.zip
       - name: dir
         run: |
-        dir
-        dir dist
+          dir
+          dir dist
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
@@ -67,8 +67,8 @@ jobs:
           zip ${{ env.NAME_UPPER }}DownloaderLinux.zip ${{ env.NAME_UPPER }}DownloaderLinux
       - name: dir
         run: |
-        ls
-        ls dist
+          ls
+          ls dist
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
