@@ -1,22 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the pf2-downloader package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translations template for pf2-downloader.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the pf2-downloader
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pf2-downloader\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 16:31-0400\n"
+"Project-Id-Version: pf2-downloader VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-08-12 13:45-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: downloads.py:27
 msgid "Extracting the downloaded archive, please wait patiently."
@@ -61,8 +61,9 @@ msgstr ""
 #: downloads.py:81
 #, python-format
 msgid ""
-"You don't have enough free space in your computer's default temporary folder "
-"for this. A minimum of %s is required. Select alternate temporary folder?"
+"You don't have enough free space in your computer's default temporary "
+"folder for this. A minimum of %s is required. Select alternate temporary "
+"folder?"
 msgstr ""
 
 #: downloads.py:88
@@ -78,8 +79,8 @@ msgstr ""
 #: downloads.py:95
 #, python-format
 msgid ""
-"You don't have enough free space for the extraction. A minimum of %s at your "
-"chosen extraction site is required."
+"You don't have enough free space for the extraction. A minimum of %s at "
+"your chosen extraction site is required."
 msgstr ""
 
 #: downloads.py:117
@@ -101,8 +102,8 @@ msgstr ""
 
 #: gui.py:32 gui.py:42
 msgid ""
-"Starting the download for Pre-Fortress 2... You may see some errors that are "
-"safe to ignore."
+"Starting the download for Pre-Fortress 2... You may see some errors that "
+"are safe to ignore."
 msgstr ""
 
 #: gui.py:35 gui.py:45 pf2_downloader.py:135
@@ -115,7 +116,8 @@ msgstr ""
 
 #: gui.py:50
 msgid ""
-"The verification process has completed, and any corruption has been repaired."
+"The verification process has completed, and any corruption has been "
+"repaired."
 msgstr ""
 
 #: gui.py:53
@@ -147,8 +149,7 @@ msgid " {y/N}"
 msgstr ""
 
 #: gui.py:93
-msgid ""
-"[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
+msgid "[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
 msgstr ""
 
 #: gui.py:120 pf2_downloader.py:91
@@ -167,39 +168,43 @@ msgstr ""
 
 #: pf2_downloader.py:87 pf2_downloader.py:166
 msgid ""
-"[bold red]:warning: The program has failed. Post a screenshot in #technical-"
-"issues on the Discord. :warning:[/bold red]"
+"[bold red]:warning: The program has failed. Post a screenshot in "
+"#technical-issues on the Discord. :warning:[/bold red]"
 msgstr ""
 
 #: pf2_downloader.py:89
 msgid "[bold]You are safe to close this window."
 msgstr ""
 
-#: pf2_downloader.py:98
+#: pf2_downloader.py:97
 msgid ""
 "Usage: PF2Downloader [COMMAND] [PATH]\n"
 "Installation utility for Pre-Fortress 2\n"
 "Forked from TF2CDownloader\n"
 "\n"
-"If no arguments are provided, the downloader will be ran in setup mode, in\n"
-"which a series of questions will be asked to install the game for a regular\n"
+"If no arguments are provided, the downloader will be ran in setup mode, "
+"in\n"
+"which a series of questions will be asked to install the game for a "
+"regular\n"
 "user. This is what's used when opening the downloader from the desktop.\n"
 "\n"
 "Valid commands:\n"
-"  --install           installs Pre-Fortress 2 into a new folder inside PATH\n"
-"  --update            updates the pre-existing Pre-Fortress 2 installation "
-"in its\n"
+"  --install           installs Pre-Fortress 2 into a new folder inside "
+"PATH\n"
+"  --update            updates the pre-existing Pre-Fortress 2 "
+"installation in its\n"
 "                      folder inside PATH\n"
 "  --help              shows this\n"
 "\n"
-"PATH is the folder containing Pre-Fortress 2's folder. This is usually the\n"
+"PATH is the folder containing Pre-Fortress 2's folder. This is usually "
+"the\n"
 "sourcemods folder for clients, or the Source dedicated server folder for\n"
 "servers.\n"
 "\n"
 "If PATH isn't provided, then it'll be replaced with the detected path to "
 "the\n"
-"sourcemods folder in the Steam directory. If it couldn't be detected, then "
-"the\n"
+"sourcemods folder in the Steam directory. If it couldn't be detected, "
+"then the\n"
 "path will be the current work directory."
 msgstr ""
 
@@ -209,8 +214,8 @@ msgstr ""
 
 #: pf2_downloader.py:147
 msgid ""
-"Pre-Fortress 2 isn't installed, cannot do an update. Consider using --"
-"install instead."
+"Pre-Fortress 2 isn't installed, cannot do an update. Consider using "
+"--install instead."
 msgstr ""
 
 #: pf2_downloader.py:159
@@ -219,8 +224,8 @@ msgstr ""
 
 #: selfupdate.py:34
 msgid ""
-"WARNING: downloader failed to check itself for updates, potentially out-of-"
-"date."
+"WARNING: downloader failed to check itself for updates, potentially out-"
+"of-date."
 msgstr ""
 
 #: selfupdate.py:41
@@ -235,8 +240,8 @@ msgstr ""
 
 #: selfupdate.py:43
 msgid ""
-"Delete PF2Downloader, then redownload and relaunch it from https://"
-"prefortress.com/download"
+"Delete PF2Downloader, then redownload and relaunch it from "
+"https://prefortress.com/download"
 msgstr ""
 
 #: selfupdate.py:45
@@ -263,8 +268,8 @@ msgstr ""
 
 #: setup.py:86
 msgid ""
-"WARNING: Steam's sourcemods folder has not been found, or you chose not to "
-"use it."
+"WARNING: Steam's sourcemods folder has not been found, or you chose not "
+"to use it."
 msgstr ""
 
 #: setup.py:87
@@ -275,8 +280,7 @@ msgid ""
 msgstr ""
 
 #: setup.py:91
-msgid ""
-"Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
+msgid "Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
 msgstr ""
 
 #: setup.py:94
@@ -292,14 +296,14 @@ msgstr ""
 
 #: versions.py:20
 msgid ""
-"Could not get version list. If your internet connection is fine, the servers "
-"could be having technical issues."
+"Could not get version list. If your internet connection is fine, the "
+"servers could be having technical issues."
 msgstr ""
 
 #: versions.py:44
 msgid ""
-"We can't read the version of your installation. It could be corrupted. Do "
-"you want to reinstall the game?"
+"We can't read the version of your installation. It could be corrupted. Do"
+" you want to reinstall the game?"
 msgstr ""
 
 #: versions.py:47 versions.py:67 versions.py:95 versions.py:103 versions.py:114
@@ -314,14 +318,14 @@ msgstr ""
 
 #: versions.py:92
 msgid ""
-"The version of your installation is unknown. It could be corrupted. Do you "
-"want to reinstall the game?"
+"The version of your installation is unknown. It could be corrupted. Do "
+"you want to reinstall the game?"
 msgstr ""
 
 #: versions.py:100
 msgid ""
-"We think we've found an existing up-to-date installation of the game. Do you "
-"want to reinstall it?"
+"We think we've found an existing up-to-date installation of the game. Do "
+"you want to reinstall it?"
 msgstr ""
 
 #: versions.py:108
@@ -330,8 +334,8 @@ msgstr ""
 
 #: versions.py:109
 msgid ""
-"If running, please close your game client and/or game launcher. Confirm once "
-"they're closed."
+"If running, please close your game client and/or game launcher. Confirm "
+"once they're closed."
 msgstr ""
 
 #: versions.py:112
@@ -340,6 +344,7 @@ msgstr ""
 
 #: versions.py:116
 msgid ""
-"An update is available, but no patch could be found for your game version. "
-"Try reinstalling?"
+"An update is available, but no patch could be found for your game "
+"version. Try reinstalling?"
 msgstr ""
+

@@ -1,24 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the pf2-downloader package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the pf2-downloader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pf2-downloader\n"
+"Project-Id-Version:  pf2-downloader\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 14:26-0400\n"
+"POT-Creation-Date: 2024-08-12 13:45-0400\n"
 "PO-Revision-Date: 2023-03-29 12:42+0000\n"
 "Last-Translator: Mike Hawk <japonezul75@gmail.com>\n"
-"Language-Team: Romanian <https://hosted.weblate.org/projects/pf2downloader/"
-"pf2downloader/ro/>\n"
 "Language: ro\n"
+"Language-Team: Romanian "
+"<https://hosted.weblate.org/projects/pf2downloader/pf2downloader/ro/>\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 "
+"< 20)) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: downloads.py:27
 msgid "Extracting the downloaded archive, please wait patiently."
@@ -64,20 +65,21 @@ msgstr "%.2f PB"
 #: downloads.py:81
 #, python-format
 msgid ""
-"You don't have enough free space in your computer's default temporary folder "
-"for this. A minimum of %s is required. Select alternate temporary folder?"
+"You don't have enough free space in your computer's default temporary "
+"folder for this. A minimum of %s is required. Select alternate temporary "
+"folder?"
 msgstr ""
-"Nu ai suficient spațiu liber în folder-ul temporar implicit al computerului "
-"tău pentru asta. Un minimum de %s este necesar. Selectezi un folder temporar "
-"alternativ?"
+"Nu ai suficient spațiu liber în folder-ul temporar implicit al "
+"computerului tău pentru asta. Un minimum de %s este necesar. Selectezi un"
+" folder temporar alternativ?"
 
 #: downloads.py:88
 msgid ""
 "Still not enough space at specified path. Retry, and select a different "
 "drive if available."
 msgstr ""
-"Tot nu aveți suficient spațiu în zona specificată. Reîncercați, și selectați "
-"un drive diferit dacă este posibil."
+"Tot nu aveți suficient spațiu în zona specificată. Reîncercați, și "
+"selectați un drive diferit dacă este posibil."
 
 #: downloads.py:90
 msgid "Folder selection prompt closed without choosing any path. Exiting..."
@@ -88,11 +90,11 @@ msgstr ""
 #: downloads.py:95
 #, python-format
 msgid ""
-"You don't have enough free space for the extraction. A minimum of %s at your "
-"chosen extraction site is required."
+"You don't have enough free space for the extraction. A minimum of %s at "
+"your chosen extraction site is required."
 msgstr ""
-"Nu ai suficient spațiu liber pentru extracție. Un minimum de %s la ruta de "
-"extracție aleasă este necesar."
+"Nu ai suficient spațiu liber pentru extracție. Un minimum de %s la ruta "
+"de extracție aleasă este necesar."
 
 #: downloads.py:117
 msgid "Getting the archive..."
@@ -119,11 +121,11 @@ msgstr ""
 #: gui.py:32 gui.py:42
 #, fuzzy
 msgid ""
-"Starting the download for Pre-Fortress 2... You may see some errors that are "
-"safe to ignore."
+"Starting the download for Pre-Fortress 2... You may see some errors that "
+"are safe to ignore."
 msgstr ""
-"Se începe descărcarea pentru Pre-Fortress 2... Este posibil să vezi niște erori "
-"care pot fi ignorate."
+"Se începe descărcarea pentru Pre-Fortress 2... Este posibil să vezi niște"
+" erori care pot fi ignorate."
 
 #: gui.py:35 gui.py:45 pf2_downloader.py:135
 msgid "The installation has successfully completed. Remember to restart Steam!"
@@ -135,7 +137,8 @@ msgstr "Actualizarea a fost finalizată cu succes."
 
 #: gui.py:50
 msgid ""
-"The verification process has completed, and any corruption has been repaired."
+"The verification process has completed, and any corruption has been "
+"repaired."
 msgstr ""
 
 #: gui.py:53
@@ -167,11 +170,10 @@ msgid " {y/N}"
 msgstr " (d/N)"
 
 #: gui.py:93
-msgid ""
-"[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
+msgid "[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
 msgstr ""
-"[bold blue]Vă rugăm să răspundeți cu 'da' sau 'nu' (sau 'd' sau 'n').[/bold "
-"blue]"
+"[bold blue]Vă rugăm să răspundeți cu 'da' sau 'nu' (sau 'd' sau "
+"'n').[/bold blue]"
 
 #: gui.py:120 pf2_downloader.py:91
 msgid "Press Enter to exit."
@@ -189,42 +191,46 @@ msgstr "[italic magenta]----- Detalii excepții deasupra liniei -----"
 
 #: pf2_downloader.py:87 pf2_downloader.py:166
 msgid ""
-"[bold red]:warning: The program has failed. Post a screenshot in #technical-"
-"issues on the Discord. :warning:[/bold red]"
+"[bold red]:warning: The program has failed. Post a screenshot in "
+"#technical-issues on the Discord. :warning:[/bold red]"
 msgstr ""
-"[bold red]:warning: Programul a eșuat. Va rugăm să postați un screenshot în "
-"#technical-issues pe Discord. :warning:[/bold red]"
+"[bold red]:warning: Programul a eșuat. Va rugăm să postați un screenshot "
+"în #technical-issues pe Discord. :warning:[/bold red]"
 
 #: pf2_downloader.py:89
 msgid "[bold]You are safe to close this window."
 msgstr "[bold]Puteți închide această fereastră."
 
-#: pf2_downloader.py:98
+#: pf2_downloader.py:97
 #, fuzzy
 msgid ""
 "Usage: PF2Downloader [COMMAND] [PATH]\n"
 "Installation utility for Pre-Fortress 2\n"
 "Forked from TF2CDownloader\n"
 "\n"
-"If no arguments are provided, the downloader will be ran in setup mode, in\n"
-"which a series of questions will be asked to install the game for a regular\n"
+"If no arguments are provided, the downloader will be ran in setup mode, "
+"in\n"
+"which a series of questions will be asked to install the game for a "
+"regular\n"
 "user. This is what's used when opening the downloader from the desktop.\n"
 "\n"
 "Valid commands:\n"
-"  --install           installs Pre-Fortress 2 into a new folder inside PATH\n"
-"  --update            updates the pre-existing Pre-Fortress 2 installation "
-"in its\n"
+"  --install           installs Pre-Fortress 2 into a new folder inside "
+"PATH\n"
+"  --update            updates the pre-existing Pre-Fortress 2 "
+"installation in its\n"
 "                      folder inside PATH\n"
 "  --help              shows this\n"
 "\n"
-"PATH is the folder containing Pre-Fortress 2's folder. This is usually the\n"
+"PATH is the folder containing Pre-Fortress 2's folder. This is usually "
+"the\n"
 "sourcemods folder for clients, or the Source dedicated server folder for\n"
 "servers.\n"
 "\n"
 "If PATH isn't provided, then it'll be replaced with the detected path to "
 "the\n"
-"sourcemods folder in the Steam directory. If it couldn't be detected, then "
-"the\n"
+"sourcemods folder in the Steam directory. If it couldn't be detected, "
+"then the\n"
 "path will be the current work directory."
 msgstr ""
 "Utilizare: PF2Downloader [COMANDĂ][RUTĂ]\n"
@@ -232,24 +238,27 @@ msgstr ""
 "\n"
 "Dacă niciun argument nu este furnizat, descărcătorul va rula în modul "
 "pregătire,\n"
-"în care o serie de întrebări vor fi puse pentru a instala jocul pentru un "
-"utilizator\n"
+"în care o serie de întrebări vor fi puse pentru a instala jocul pentru un"
+" utilizator\n"
 "obișnuit. Asta este ce se folosește când se deschide descărcătorul de pe "
 "desktop.\n"
 "\n"
 "Comenzi valide:\n"
-"  --install           instalează Pre-Fortress 2 într-un folder nou înăuntru la "
-"RUTĂ\n"
-"  --update            actualizează instalația pre-existentă de Pre-Fortress 2 "
-"în \n"
+"  --install           instalează Pre-Fortress 2 într-un folder nou "
+"înăuntru la RUTĂ\n"
+"  --update            actualizează instalația pre-existentă de Pre-"
+"Fortress 2 în \n"
 "                      folder-ul său în RUTĂ\n"
 "  --help              afișează asta\n"
 "\n"
-"RUTA este folderul care conține folder-ul Pre-Fortress 2. Acesta este deobicei\n"
-"folder-ul sourcemods pentru clienți, sau folder-ul pentru servere dedicate\n"
+"RUTA este folderul care conține folder-ul Pre-Fortress 2. Acesta este "
+"deobicei\n"
+"folder-ul sourcemods pentru clienți, sau folder-ul pentru servere "
+"dedicate\n"
 "Source pentru servere.\n"
 "\n"
-"Dacă RUTA nu este furnizată, atunci va fi înlocuită cu ruta către folder-ul\n"
+"Dacă RUTA nu este furnizată, atunci va fi înlocuită cu ruta către folder-"
+"ul\n"
 "sourcemods din registrul Steam. Dacă poate fi detectată, atunci ruta va\n"
 "fi actual registru de lucru."
 
@@ -261,8 +270,8 @@ msgstr "Pre-Fortress 2 este deja intalat. Se asumă o reinstalare."
 #: pf2_downloader.py:147
 #, fuzzy
 msgid ""
-"Pre-Fortress 2 isn't installed, cannot do an update. Consider using --"
-"install instead."
+"Pre-Fortress 2 isn't installed, cannot do an update. Consider using "
+"--install instead."
 msgstr ""
 "Pre-Fortress 2 nu este instalat, nu se paote actualiza. Considerați să "
 "utilizați --install în schimb."
@@ -273,11 +282,11 @@ msgstr "Comandă necunoscută. Încercați --help"
 
 #: selfupdate.py:34
 msgid ""
-"WARNING: downloader failed to check itself for updates, potentially out-of-"
-"date."
+"WARNING: downloader failed to check itself for updates, potentially out-"
+"of-date."
 msgstr ""
-"ATENȚIE: descărcătorul a eșuat să se verifice pentru actualizări, posibil "
-"demodat."
+"ATENȚIE: descărcătorul a eșuat să se verifice pentru actualizări, posibil"
+" demodat."
 
 #: selfupdate.py:41
 msgid "PF2Downloader appears to be up-to-date."
@@ -288,16 +297,16 @@ msgid ""
 "PF2Downloader has an update available. Your current version may not work "
 "properly. Do you want to install it?"
 msgstr ""
-"PF2Downloader are o actualizare disponibilă. Versiunea dumneavoastră curentă "
-"ar putea să nu mai fucționeze cum trebuie. Doriți să-l instalați?"
+"PF2Downloader are o actualizare disponibilă. Versiunea dumneavoastră "
+"curentă ar putea să nu mai fucționeze cum trebuie. Doriți să-l instalați?"
 
 #: selfupdate.py:43
 msgid ""
-"Delete PF2Downloader, then redownload and relaunch it from https://"
-"prefortress.com/download"
+"Delete PF2Downloader, then redownload and relaunch it from "
+"https://prefortress.com/download"
 msgstr ""
-"Ștergeți PF2Downloader, apoi redescărcați-l și relansați-l de la https://"
-"prefortress.com/download"
+"Ștergeți PF2Downloader, apoi redescărcați-l și relansați-l de la "
+"https://prefortress.com/download"
 
 #: selfupdate.py:45
 msgid "PF2Downloader out-of-date."
@@ -306,8 +315,8 @@ msgstr "PF2Downloader demodat."
 #: selfupdate.py:47
 msgid "User chose to skip update. Things may be broken."
 msgstr ""
-"Utilizatorul a ales să amâne actualizarea. Unele chestii ar putea să nu mai "
-"funcționeze."
+"Utilizatorul a ales să amâne actualizarea. Unele chestii ar putea să nu "
+"mai funcționeze."
 
 #: setup.py:66
 #, python-format
@@ -325,24 +334,22 @@ msgstr "Arată asta corect?"
 
 #: setup.py:86
 msgid ""
-"WARNING: Steam's sourcemods folder has not been found, or you chose not to "
-"use it."
+"WARNING: Steam's sourcemods folder has not been found, or you chose not "
+"to use it."
 msgstr ""
-"ATENȚIE: folder-ul Steam ”sourcemod” nu a fost găsit, sau ați ales să nu-l "
-"folosiți."
+"ATENȚIE: folder-ul Steam ”sourcemod” nu a fost găsit, sau ați ales să "
+"nu-l folosiți."
 
 #: setup.py:87
 #, python-format
 msgid ""
 "Would you like to extract in %s? You must move it to your sourcemods "
 "manually."
-msgstr ""
-"Ași dori să extrageți în %s? Trebuie să-l mutați manual către sourcemods."
+msgstr "Ași dori să extrageți în %s? Trebuie să-l mutați manual către sourcemods."
 
 #: setup.py:91
 #, fuzzy
-msgid ""
-"Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
+msgid "Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
 msgstr "Vă rugăm, alegeți locația unde vreți să instalați Pre-Fortress 2.\n"
 
 #: setup.py:94
@@ -360,19 +367,19 @@ msgstr "Reinițializare...\n"
 
 #: versions.py:20
 msgid ""
-"Could not get version list. If your internet connection is fine, the servers "
-"could be having technical issues."
+"Could not get version list. If your internet connection is fine, the "
+"servers could be having technical issues."
 msgstr ""
 "Nu s-a putut obține lista de versiuni. Dacă conexiunea dumneavoastră la "
 "internet este bună. atunci serverele ar putea avea dificultăți tehnice."
 
 #: versions.py:44
 msgid ""
-"We can't read the version of your installation. It could be corrupted. Do "
-"you want to reinstall the game?"
+"We can't read the version of your installation. It could be corrupted. Do"
+" you want to reinstall the game?"
 msgstr ""
-"Nu putem citi versiunea instalării voastre. Ar putea să fie coruptă. Doriți "
-"să reinstalați jocul?"
+"Nu putem citi versiunea instalării voastre. Ar putea să fie coruptă. "
+"Doriți să reinstalați jocul?"
 
 #: versions.py:47 versions.py:67 versions.py:95 versions.py:103 versions.py:114
 msgid "We have nothing to do. Goodbye!"
@@ -383,21 +390,21 @@ msgid ""
 "No game installation detected at given sourcemods path. Do you want to "
 "install the game?"
 msgstr ""
-"Nicio instalație a jocului detectată la ruta dată de sourcemods. Doriți să "
-"instalați jocul?"
+"Nicio instalație a jocului detectată la ruta dată de sourcemods. Doriți "
+"să instalați jocul?"
 
 #: versions.py:92
 msgid ""
-"The version of your installation is unknown. It could be corrupted. Do you "
-"want to reinstall the game?"
+"The version of your installation is unknown. It could be corrupted. Do "
+"you want to reinstall the game?"
 msgstr ""
 "Versiunea instalării voastre este necunoscută. Ar putea să fi coruptă. "
 "Doriți să reinstalați jocul?"
 
 #: versions.py:100
 msgid ""
-"We think we've found an existing up-to-date installation of the game. Do you "
-"want to reinstall it?"
+"We think we've found an existing up-to-date installation of the game. Do "
+"you want to reinstall it?"
 msgstr ""
 "Credem că am găsit o instalație de actualitate a jocului. Doriți s-o "
 "reinstalați?"
@@ -409,8 +416,8 @@ msgstr "O actualizare este disponibilă pentru Pre-Fortress 2. Doriți s-o intal
 
 #: versions.py:109
 msgid ""
-"If running, please close your game client and/or game launcher. Confirm once "
-"they're closed."
+"If running, please close your game client and/or game launcher. Confirm "
+"once they're closed."
 msgstr ""
 "Dacă rulează, vă rugăm să închideți clientul și/sau lansatorul jocului. "
 "Confirmați odată ce sunt închise."
@@ -421,14 +428,15 @@ msgstr "Ieșire..."
 
 #: versions.py:116
 msgid ""
-"An update is available, but no patch could be found for your game version. "
-"Try reinstalling?"
+"An update is available, but no patch could be found for your game "
+"version. Try reinstalling?"
 msgstr ""
-"O actualizare este disponibiliă, dar niciun patch nu a putut fi găsit pentru "
-"vesiunea jocului dumneavoastră. Încercați să reinstalați?"
+"O actualizare este disponibiliă, dar niciun patch nu a putut fi găsit "
+"pentru vesiunea jocului dumneavoastră. Încercați să reinstalați?"
 
 #~ msgid "Applying safety blacklist..."
 #~ msgstr "Se aplică lista neagră de siguranță..."
 
 #~ msgid "WARNING: could not apply safety blacklist."
 #~ msgstr "ATENȚIE: nu s-a putut aplica lista neagră de siguranță."
+

@@ -1,23 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the pf2-downloader package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2022 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the pf2-downloader
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pf2-downloader\n"
+"Project-Id-Version:  pf2-downloader\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 14:26-0400\n"
+"POT-Creation-Date: 2024-08-12 13:45-0400\n"
 "PO-Revision-Date: 2022-09-19 13:01+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
-"pf2downloader/pf2downloader/nb_NO/>\n"
 "Language: nb_NO\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Norwegian Bokmål "
+"<https://hosted.weblate.org/projects/pf2downloader/pf2downloader/nb_NO/>"
+"\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: downloads.py:27
 msgid "Extracting the downloaded archive, please wait patiently."
@@ -63,8 +65,9 @@ msgstr "%.2f PB"
 #: downloads.py:81
 #, fuzzy, python-format
 msgid ""
-"You don't have enough free space in your computer's default temporary folder "
-"for this. A minimum of %s is required. Select alternate temporary folder?"
+"You don't have enough free space in your computer's default temporary "
+"folder for this. A minimum of %s is required. Select alternate temporary "
+"folder?"
 msgstr ""
 "Du har ikke nok ledig plass for utpakking. Minst %s kreves på valgt "
 "utpakkingssted."
@@ -82,8 +85,8 @@ msgstr ""
 #: downloads.py:95
 #, python-format
 msgid ""
-"You don't have enough free space for the extraction. A minimum of %s at your "
-"chosen extraction site is required."
+"You don't have enough free space for the extraction. A minimum of %s at "
+"your chosen extraction site is required."
 msgstr ""
 "Du har ikke nok ledig plass for utpakking. Minst %s kreves på valgt "
 "utpakkingssted."
@@ -109,11 +112,11 @@ msgstr ""
 #: gui.py:32 gui.py:42
 #, fuzzy
 msgid ""
-"Starting the download for Pre-Fortress 2... You may see some errors that are "
-"safe to ignore."
+"Starting the download for Pre-Fortress 2... You may see some errors that "
+"are safe to ignore."
 msgstr ""
-"Starter nedlasting av Pre-Fortress 2 … Det kan hende du får noen feil, men de "
-"kan du trygt ignorere."
+"Starter nedlasting av Pre-Fortress 2 … Det kan hende du får noen feil, "
+"men de kan du trygt ignorere."
 
 #: gui.py:35 gui.py:45 pf2_downloader.py:135
 #, fuzzy
@@ -127,7 +130,8 @@ msgstr "Oppdatering fullført."
 
 #: gui.py:50
 msgid ""
-"The verification process has completed, and any corruption has been repaired."
+"The verification process has completed, and any corruption has been "
+"repaired."
 msgstr ""
 
 #: gui.py:53
@@ -159,10 +163,10 @@ msgid " {y/N}"
 msgstr " {j/N}"
 
 #: gui.py:93
-msgid ""
-"[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
+msgid "[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
 msgstr ""
-"[bold blue]Svar med «ja» eller «nei» (alternativt «j» eller «n»).[/bold blue]"
+"[bold blue]Svar med «ja» eller «nei» (alternativt «j» eller «n»).[/bold "
+"blue]"
 
 #: gui.py:120 pf2_downloader.py:91
 msgid "Press Enter to exit."
@@ -181,42 +185,46 @@ msgstr "[italic magenta]----- Detaljer om utpakkingen over denne linjen -----"
 #: pf2_downloader.py:87 pf2_downloader.py:166
 #, fuzzy
 msgid ""
-"[bold red]:warning: The program has failed. Post a screenshot in #technical-"
-"issues on the Discord. :warning:[/bold red]"
+"[bold red]:warning: The program has failed. Post a screenshot in "
+"#technical-issues on the Discord. :warning:[/bold red]"
 msgstr ""
-"[bold red]:Advarsel: Programmet har mislyktes. Post en skjermavbildning i "
-"#technical-issues på Discord-en. :warning:[/bold red]"
+"[bold red]:Advarsel: Programmet har mislyktes. Post en skjermavbildning i"
+" #technical-issues på Discord-en. :warning:[/bold red]"
 
 #: pf2_downloader.py:89
 msgid "[bold]You are safe to close this window."
 msgstr "[bold]Du kan trygt lukke dette vinduet."
 
-#: pf2_downloader.py:98
+#: pf2_downloader.py:97
 #, fuzzy
 msgid ""
 "Usage: PF2Downloader [COMMAND] [PATH]\n"
 "Installation utility for Pre-Fortress 2\n"
 "Forked from TF2CDownloader\n"
 "\n"
-"If no arguments are provided, the downloader will be ran in setup mode, in\n"
-"which a series of questions will be asked to install the game for a regular\n"
+"If no arguments are provided, the downloader will be ran in setup mode, "
+"in\n"
+"which a series of questions will be asked to install the game for a "
+"regular\n"
 "user. This is what's used when opening the downloader from the desktop.\n"
 "\n"
 "Valid commands:\n"
-"  --install           installs Pre-Fortress 2 into a new folder inside PATH\n"
-"  --update            updates the pre-existing Pre-Fortress 2 installation "
-"in its\n"
+"  --install           installs Pre-Fortress 2 into a new folder inside "
+"PATH\n"
+"  --update            updates the pre-existing Pre-Fortress 2 "
+"installation in its\n"
 "                      folder inside PATH\n"
 "  --help              shows this\n"
 "\n"
-"PATH is the folder containing Pre-Fortress 2's folder. This is usually the\n"
+"PATH is the folder containing Pre-Fortress 2's folder. This is usually "
+"the\n"
 "sourcemods folder for clients, or the Source dedicated server folder for\n"
 "servers.\n"
 "\n"
 "If PATH isn't provided, then it'll be replaced with the detected path to "
 "the\n"
-"sourcemods folder in the Steam directory. If it couldn't be detected, then "
-"the\n"
+"sourcemods folder in the Steam directory. If it couldn't be detected, "
+"then the\n"
 "path will be the current work directory."
 msgstr ""
 "Bruk: PF2Downloader [COMMAND] [PATH]\n"
@@ -229,13 +237,15 @@ msgstr ""
 "Det er dette som brukes når nedlasteren startes fra skrivebordet.\n"
 "\n"
 "Gyldige kommandoer:\n"
-"  --install           installerer Pre-Fortress 2 i en ny mappe inne i PATH\n"
-"  --update            oppdaterer en allerede eksisterende Pre-Fortress 2-"
-"installasjon i egen mappe\n"
+"  --install           installerer Pre-Fortress 2 i en ny mappe inne i "
+"PATH\n"
+"  --update            oppdaterer en allerede eksisterende Pre-Fortress "
+"2-installasjon i egen mappe\n"
 "                      inne i PATH\n"
 "  --help              viser denne hjelpeteksten\n"
 "\n"
-"PATH er mappen som inneholder mappen for Pre-Fortress 2. Dette er vanligvis\n"
+"PATH er mappen som inneholder mappen for Pre-Fortress 2. Dette er "
+"vanligvis\n"
 "sourcemods-mappen for klienter, eller Source-dedikert tjenermappe for "
 "tjenere.\n"
 "\n"
@@ -251,11 +261,11 @@ msgstr "Pre-Fortress 2 er allerede installert. Antar en reinstallasjon."
 #: pf2_downloader.py:147
 #, fuzzy
 msgid ""
-"Pre-Fortress 2 isn't installed, cannot do an update. Consider using --"
-"install instead."
+"Pre-Fortress 2 isn't installed, cannot do an update. Consider using "
+"--install instead."
 msgstr ""
-"Pre-Fortress 2 er ikke installert. Kan ikke oppgradere. Overvei bruk av «--"
-"install» istedenfor."
+"Pre-Fortress 2 er ikke installert. Kan ikke oppgradere. Overvei bruk av "
+"«--install» istedenfor."
 
 #: pf2_downloader.py:159
 msgid "Unrecognised command. Try --help"
@@ -263,8 +273,8 @@ msgstr "Gjenkjenner ikke kommandoen. Prøv «--help»"
 
 #: selfupdate.py:34
 msgid ""
-"WARNING: downloader failed to check itself for updates, potentially out-of-"
-"date."
+"WARNING: downloader failed to check itself for updates, potentially out-"
+"of-date."
 msgstr ""
 
 #: selfupdate.py:41
@@ -280,8 +290,8 @@ msgstr "En nye versjon av spillet ditt er tilgjengelig. Vil du installere den?"
 
 #: selfupdate.py:43
 msgid ""
-"Delete PF2Downloader, then redownload and relaunch it from https://"
-"prefortress.com/download"
+"Delete PF2Downloader, then redownload and relaunch it from "
+"https://prefortress.com/download"
 msgstr ""
 
 #: selfupdate.py:45
@@ -308,11 +318,11 @@ msgstr ""
 
 #: setup.py:86
 msgid ""
-"WARNING: Steam's sourcemods folder has not been found, or you chose not to "
-"use it."
+"WARNING: Steam's sourcemods folder has not been found, or you chose not "
+"to use it."
 msgstr ""
-"Advarsel: Steam sin sourcemods-mappe ble ikke funnet, eller så har du valgt "
-"å ikke bruke den."
+"Advarsel: Steam sin sourcemods-mappe ble ikke funnet, eller så har du "
+"valgt å ikke bruke den."
 
 #: setup.py:87
 #, fuzzy, python-format
@@ -320,12 +330,12 @@ msgid ""
 "Would you like to extract in %s? You must move it to your sourcemods "
 "manually."
 msgstr ""
-"Vil du pakke ut til «%s»? Du må flytte den til din sourcemods-mappe manuelt."
+"Vil du pakke ut til «%s»? Du må flytte den til din sourcemods-mappe "
+"manuelt."
 
 #: setup.py:91
 #, fuzzy
-msgid ""
-"Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
+msgid "Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
 msgstr "Skriv inn hvor du vil installere Pre-Fortress 2 hen.\n"
 
 #: setup.py:94
@@ -343,19 +353,19 @@ msgstr "Laster inn igjen …\n"
 
 #: versions.py:20
 msgid ""
-"Could not get version list. If your internet connection is fine, the servers "
-"could be having technical issues."
+"Could not get version list. If your internet connection is fine, the "
+"servers could be having technical issues."
 msgstr ""
-"Kunne ikke hente versjonslisten. Hvis tilkoblingen din til Internett virker "
-"kan det hende problemet er på tjenersiden."
+"Kunne ikke hente versjonslisten. Hvis tilkoblingen din til Internett "
+"virker kan det hende problemet er på tjenersiden."
 
 #: versions.py:44
 msgid ""
-"We can't read the version of your installation. It could be corrupted. Do "
-"you want to reinstall the game?"
+"We can't read the version of your installation. It could be corrupted. Do"
+" you want to reinstall the game?"
 msgstr ""
-"Kan ikke lese versjonen for din installasjon. Den er kanskje skadet. Vil du "
-"reinstallere spillet?"
+"Kan ikke lese versjonen for din installasjon. Den er kanskje skadet. Vil "
+"du reinstallere spillet?"
 
 #: versions.py:47 versions.py:67 versions.py:95 versions.py:103 versions.py:114
 msgid "We have nothing to do. Goodbye!"
@@ -367,13 +377,13 @@ msgid ""
 "No game installation detected at given sourcemods path. Do you want to "
 "install the game?"
 msgstr ""
-"Kan ikke lese versjonen for din installasjon. Den er kanskje skadet. Vil du "
-"reinstallere spillet?"
+"Kan ikke lese versjonen for din installasjon. Den er kanskje skadet. Vil "
+"du reinstallere spillet?"
 
 #: versions.py:92
 msgid ""
-"The version of your installation is unknown. It could be corrupted. Do you "
-"want to reinstall the game?"
+"The version of your installation is unknown. It could be corrupted. Do "
+"you want to reinstall the game?"
 msgstr ""
 "Versjonen for din installasjon er ukjent. Den er kanskje skadet. Vil du "
 "reinstallere spillet?"
@@ -381,11 +391,11 @@ msgstr ""
 #: versions.py:100
 #, fuzzy
 msgid ""
-"We think we've found an existing up-to-date installation of the game. Do you "
-"want to reinstall it?"
+"We think we've found an existing up-to-date installation of the game. Do "
+"you want to reinstall it?"
 msgstr ""
-"Vi har funnet en eksisterende installasjon av nyeste dato av spillet. Vil du "
-"reinstallere det?"
+"Vi har funnet en eksisterende installasjon av nyeste dato av spillet. Vil"
+" du reinstallere det?"
 
 #: versions.py:108
 #, fuzzy
@@ -394,8 +404,8 @@ msgstr "En nye versjon av spillet ditt er tilgjengelig. Vil du installere den?"
 
 #: versions.py:109
 msgid ""
-"If running, please close your game client and/or game launcher. Confirm once "
-"they're closed."
+"If running, please close your game client and/or game launcher. Confirm "
+"once they're closed."
 msgstr ""
 
 #: versions.py:112
@@ -405,8 +415,8 @@ msgstr ""
 #: versions.py:116
 #, fuzzy
 msgid ""
-"An update is available, but no patch could be found for your game version. "
-"Try reinstalling?"
+"An update is available, but no patch could be found for your game "
+"version. Try reinstalling?"
 msgstr "En nye versjon av spillet ditt er tilgjengelig. Vil du installere den?"
 
 #~ msgid "Applying safety blacklist..."
@@ -415,32 +425,34 @@ msgstr "En nye versjon av spillet ditt er tilgjengelig. Vil du installere den?"
 #~ msgid "WARNING: could not apply safety blacklist."
 #~ msgstr "Advarsel: Kunne ikke legge til trygghetssvarteliste."
 
-#, python-format
 #~ msgid ""
-#~ "You don't have enough free space for the download. A minimum of %s on "
-#~ "your primary drive is required."
+#~ "You don't have enough free space "
+#~ "for the download. A minimum of %s"
+#~ " on your primary drive is required."
 #~ msgstr ""
-#~ "Du har ikke nok ledig plass å laste ned til. Minst %s kreves på din "
-#~ "hoveddisk."
+#~ "Du har ikke nok ledig plass å "
+#~ "laste ned til. Minst %s kreves på"
+#~ " din hoveddisk."
 
-#, python-format
 #~ msgid "Getting %s patch..."
 #~ msgid_plural "Getting %s patches..."
 #~ msgstr[0] "Henter %s feilfiks …"
 #~ msgstr[1] "Henter %s feilfikser …"
 
-#, python-format
 #~ msgid "Downloading patch %s to %s..."
 #~ msgstr "Laster ned feilfiks %s til %s …"
 
 #~ msgid ""
-#~ "It's the recommended installation location. Would you like to install "
-#~ "Pre-Fortress 2 there?"
+#~ "It's the recommended installation location."
+#~ " Would you like to install Pre-"
+#~ "Fortress 2 there?"
 #~ msgstr ""
-#~ "Dette er anbefalt installasjonssted. Vil du installere Pre-Fortress 2 der?"
+#~ "Dette er anbefalt installasjonssted. Vil "
+#~ "du installere Pre-Fortress 2 der?"
 
 #~ msgid "You need to install Aria2 to use this script."
 #~ msgstr "Du må installere Aria2 for å bruke dette skriptet."
 
 #~ msgid "In that case, do you want to reinstall completely?"
 #~ msgstr "Vil du også reinstallere spillet fullstendig?"
+

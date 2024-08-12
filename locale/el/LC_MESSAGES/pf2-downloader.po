@@ -1,19 +1,19 @@
 #
 # Azzy <azzyr@protonmail.com>, 2022.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pf2-downloader\n"
+"Project-Id-Version:  pf2-downloader\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 14:26-0400\n"
+"POT-Creation-Date: 2024-08-12 13:45-0400\n"
 "PO-Revision-Date: 2022-09-20 17:02+0200\n"
 "Last-Translator: Azzy <azzyr@protonmail.com>\n"
-"Language-Team: \n"
 "Language: el\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: downloads.py:27
 msgid "Extracting the downloaded archive, please wait patiently."
@@ -59,11 +59,12 @@ msgstr "%.2f PB"
 #: downloads.py:81
 #, fuzzy, python-format
 msgid ""
-"You don't have enough free space in your computer's default temporary folder "
-"for this. A minimum of %s is required. Select alternate temporary folder?"
+"You don't have enough free space in your computer's default temporary "
+"folder for this. A minimum of %s is required. Select alternate temporary "
+"folder?"
 msgstr ""
-"Δέν έχετε αρκετό ελεύθερο χώρο για την αποσυμπίεση. Απαιτείται τουλάχιστον "
-"%s στην επιλεγμένη τοποθεσία αποσυμπίεσης."
+"Δέν έχετε αρκετό ελεύθερο χώρο για την αποσυμπίεση. Απαιτείται "
+"τουλάχιστον %s στην επιλεγμένη τοποθεσία αποσυμπίεσης."
 
 #: downloads.py:88
 msgid ""
@@ -78,11 +79,11 @@ msgstr ""
 #: downloads.py:95
 #, python-format
 msgid ""
-"You don't have enough free space for the extraction. A minimum of %s at your "
-"chosen extraction site is required."
+"You don't have enough free space for the extraction. A minimum of %s at "
+"your chosen extraction site is required."
 msgstr ""
-"Δέν έχετε αρκετό ελεύθερο χώρο για την αποσυμπίεση. Απαιτείται τουλάχιστον "
-"%s στην επιλεγμένη τοποθεσία αποσυμπίεσης."
+"Δέν έχετε αρκετό ελεύθερο χώρο για την αποσυμπίεση. Απαιτείται "
+"τουλάχιστον %s στην επιλεγμένη τοποθεσία αποσυμπίεσης."
 
 #: downloads.py:117
 msgid "Getting the archive..."
@@ -104,17 +105,17 @@ msgstr ""
 #: gui.py:32 gui.py:42
 #, fuzzy
 msgid ""
-"Starting the download for Pre-Fortress 2... You may see some errors that are "
-"safe to ignore."
+"Starting the download for Pre-Fortress 2... You may see some errors that "
+"are safe to ignore."
 msgstr ""
-"Έναρξη της λήψης για το Pre-Fortress 2... Ενδέχεται να δείτε ορισμένα σφάλματα "
-"τα οποία μπορείτε να αγνοήσετε."
+"Έναρξη της λήψης για το Pre-Fortress 2... Ενδέχεται να δείτε ορισμένα "
+"σφάλματα τα οποία μπορείτε να αγνοήσετε."
 
 #: gui.py:35 gui.py:45 pf2_downloader.py:135
 msgid "The installation has successfully completed. Remember to restart Steam!"
 msgstr ""
-"Η εγκατάσταση ολοκληρώθηκε με επιτυχία. Μήν ξεχάσετε να επανεκκινήσετε το "
-"Steam!"
+"Η εγκατάσταση ολοκληρώθηκε με επιτυχία. Μήν ξεχάσετε να επανεκκινήσετε το"
+" Steam!"
 
 #: gui.py:40 pf2_downloader.py:156
 msgid "The update has successfully completed."
@@ -122,7 +123,8 @@ msgstr "Η ενημέρωση πραγματοποιήθηκε με επιτυχ
 
 #: gui.py:50
 msgid ""
-"The verification process has completed, and any corruption has been repaired."
+"The verification process has completed, and any corruption has been "
+"repaired."
 msgstr ""
 
 #: gui.py:53
@@ -154,10 +156,8 @@ msgid " {y/N}"
 msgstr " {ν/Ο}"
 
 #: gui.py:93
-msgid ""
-"[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
-msgstr ""
-"[bold blue]Παρακαλώ απαντήστε με 'ναι' ή 'οχι' (ή 'ν' ή 'ο').[/bold blue]"
+msgid "[bold blue]Please respond with 'yes' or 'no' (or 'y' or 'n').[/bold blue]"
+msgstr "[bold blue]Παρακαλώ απαντήστε με 'ναι' ή 'οχι' (ή 'ν' ή 'ο').[/bold blue]"
 
 #: gui.py:120 pf2_downloader.py:91
 msgid "Press Enter to exit."
@@ -173,47 +173,50 @@ msgstr ""
 
 #: pf2_downloader.py:86 pf2_downloader.py:165
 msgid "[italic magenta]----- Exception details above this line -----"
-msgstr ""
-"[italic magenta]----- Λεπτομέρειες σφάλματος πάνω από αυτή τη γραμμή -----"
+msgstr "[italic magenta]----- Λεπτομέρειες σφάλματος πάνω από αυτή τη γραμμή -----"
 
 #: pf2_downloader.py:87 pf2_downloader.py:166
 msgid ""
-"[bold red]:warning: The program has failed. Post a screenshot in #technical-"
-"issues on the Discord. :warning:[/bold red]"
+"[bold red]:warning: The program has failed. Post a screenshot in "
+"#technical-issues on the Discord. :warning:[/bold red]"
 msgstr ""
-"[bold red]:warning: Το πρόγραμμα απέτυχε. Στείλτε ένα στιγμιότυπο οθόνης στο "
-"#technical-issues στο Discord. :warning:[/bold red]"
+"[bold red]:warning: Το πρόγραμμα απέτυχε. Στείλτε ένα στιγμιότυπο οθόνης "
+"στο #technical-issues στο Discord. :warning:[/bold red]"
 
 #: pf2_downloader.py:89
 msgid "[bold]You are safe to close this window."
 msgstr "[bold]Μπορείτε να κλείσετε το παράθυρο."
 
-#: pf2_downloader.py:98
+#: pf2_downloader.py:97
 #, fuzzy
 msgid ""
 "Usage: PF2Downloader [COMMAND] [PATH]\n"
 "Installation utility for Pre-Fortress 2\n"
 "Forked from TF2CDownloader\n"
 "\n"
-"If no arguments are provided, the downloader will be ran in setup mode, in\n"
-"which a series of questions will be asked to install the game for a regular\n"
+"If no arguments are provided, the downloader will be ran in setup mode, "
+"in\n"
+"which a series of questions will be asked to install the game for a "
+"regular\n"
 "user. This is what's used when opening the downloader from the desktop.\n"
 "\n"
 "Valid commands:\n"
-"  --install           installs Pre-Fortress 2 into a new folder inside PATH\n"
-"  --update            updates the pre-existing Pre-Fortress 2 installation "
-"in its\n"
+"  --install           installs Pre-Fortress 2 into a new folder inside "
+"PATH\n"
+"  --update            updates the pre-existing Pre-Fortress 2 "
+"installation in its\n"
 "                      folder inside PATH\n"
 "  --help              shows this\n"
 "\n"
-"PATH is the folder containing Pre-Fortress 2's folder. This is usually the\n"
+"PATH is the folder containing Pre-Fortress 2's folder. This is usually "
+"the\n"
 "sourcemods folder for clients, or the Source dedicated server folder for\n"
 "servers.\n"
 "\n"
 "If PATH isn't provided, then it'll be replaced with the detected path to "
 "the\n"
-"sourcemods folder in the Steam directory. If it couldn't be detected, then "
-"the\n"
+"sourcemods folder in the Steam directory. If it couldn't be detected, "
+"then the\n"
 "path will be the current work directory."
 msgstr ""
 "Χρήση: PF2Downloader [COMMAND] [PATH]\n"
@@ -221,29 +224,29 @@ msgstr ""
 "\n"
 "Εάν δεν οριστεί συγκεκριμένη λειτουργία, το πρόγραμμα θα εκτελεστεί σε "
 "λειτουργία εγκατάστασης, στην\n"
-"οποία μια σειρά ερωτήσεων θα γίνουν για την εγκατάσταση του παιχνιδιού για "
-"έναν κανονικό\n"
+"οποία μια σειρά ερωτήσεων θα γίνουν για την εγκατάσταση του παιχνιδιού "
+"για έναν κανονικό\n"
 "χρήστη. Αυτή είναι η προεπιλογή κατά το άνοιγμα του προγράμματος από την "
 "επιφάνεια εργασίας.\n"
 "\n"
 "Έγκυρες εντολές:\n"
-"  --install           εγκαθιστά το Pre-Fortress 2 σε έναν νέο φάκελο μέσα στο "
-"PATH\n"
-"  --update            ενημερώνει την προϋπάρχουσα εγκατάσταση του "
-"Pre-Fortress 2 στο\n"
+"  --install           εγκαθιστά το Pre-Fortress 2 σε έναν νέο φάκελο μέσα"
+" στο PATH\n"
+"  --update            ενημερώνει την προϋπάρχουσα εγκατάσταση του Pre-"
+"Fortress 2 στο\n"
 "                      φάκελό του μέσα στο PATH\n"
 "  --help              εμφανίζει αυτό\n"
 "\n"
-"Το PATH είναι ο φάκελος στον οπόιο περιέγχεται ο φάκελος του Pre-Fortress 2. "
-"Αυτός είναι συνήθως ο\n"
+"Το PATH είναι ο φάκελος στον οπόιο περιέγχεται ο φάκελος του Pre-Fortress"
+" 2. Αυτός είναι συνήθως ο\n"
 "φάκελος sourcemods για τους χρήστες, ή ο φάκελος Source dedicated server "
 "για\n"
 "τους διακομιστές.\n"
 "\n"
-"Άν το PATH δέν έχει οριστέι, τότε θα αντικατασταθεί με την εντοπισμένη θέση "
-"στον\n"
-"φάκελο sourcemods στον φάκελο του Steam. Άν δεν μπορεί να εντοπιστεί, τότε "
-"η\n"
+"Άν το PATH δέν έχει οριστέι, τότε θα αντικατασταθεί με την εντοπισμένη "
+"θέση στον\n"
+"φάκελο sourcemods στον φάκελο του Steam. Άν δεν μπορεί να εντοπιστεί, "
+"τότε η\n"
 "θέση θα είναι o τρέχων φάκελος."
 
 #: pf2_downloader.py:132
@@ -254,8 +257,8 @@ msgstr "To Pre-Fortress 2 είναι ήδη εγκατεστημένο. Υποτ
 #: pf2_downloader.py:147
 #, fuzzy
 msgid ""
-"Pre-Fortress 2 isn't installed, cannot do an update. Consider using --"
-"install instead."
+"Pre-Fortress 2 isn't installed, cannot do an update. Consider using "
+"--install instead."
 msgstr ""
 "Το Pre-Fortress 2 δέν είναι εγκατεστημένο, δέν μπορεί να πραγματοποιηθεί "
 "ενημέρωση. Λάβετε υπόψιν την χρήση του --install αντί αυτού."
@@ -266,8 +269,8 @@ msgstr "Μη αναγνωρισμένη εντολή. Δοκιμάστε το --
 
 #: selfupdate.py:34
 msgid ""
-"WARNING: downloader failed to check itself for updates, potentially out-of-"
-"date."
+"WARNING: downloader failed to check itself for updates, potentially out-"
+"of-date."
 msgstr ""
 
 #: selfupdate.py:41
@@ -280,12 +283,13 @@ msgid ""
 "PF2Downloader has an update available. Your current version may not work "
 "properly. Do you want to install it?"
 msgstr ""
-"Μια ενημέρωση για το παιχνίδι είναι διαθέσιμη. Θέλετε να την εγκαταστήσετε;"
+"Μια ενημέρωση για το παιχνίδι είναι διαθέσιμη. Θέλετε να την "
+"εγκαταστήσετε;"
 
 #: selfupdate.py:43
 msgid ""
-"Delete PF2Downloader, then redownload and relaunch it from https://"
-"prefortress.com/download"
+"Delete PF2Downloader, then redownload and relaunch it from "
+"https://prefortress.com/download"
 msgstr ""
 
 #: selfupdate.py:45
@@ -312,11 +316,11 @@ msgstr ""
 
 #: setup.py:86
 msgid ""
-"WARNING: Steam's sourcemods folder has not been found, or you chose not to "
-"use it."
+"WARNING: Steam's sourcemods folder has not been found, or you chose not "
+"to use it."
 msgstr ""
-"ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ο Sourcemods φάκελος του Steam δέν βρέθηκε, ή επιλέξατε να "
-"μην το χρησιμοποιήσετε."
+"ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ο Sourcemods φάκελος του Steam δέν βρέθηκε, ή επιλέξατε να"
+" μην το χρησιμοποιήσετε."
 
 #: setup.py:87
 #, python-format
@@ -329,10 +333,10 @@ msgstr ""
 
 #: setup.py:91
 #, fuzzy
-msgid ""
-"Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
+msgid "Please, enter the location in which Pre-Fortress 2 will be installed to.\n"
 msgstr ""
-"Παρακαλώ, εισαγάγετε τη θέση στην οποία θα εγκατασταθεί το Pre-Fortress 2.\n"
+"Παρακαλώ, εισαγάγετε τη θέση στην οποία θα εγκατασταθεί το Pre-Fortress "
+"2.\n"
 
 #: setup.py:94
 #, fuzzy, python-format
@@ -349,19 +353,19 @@ msgstr "Επαναφορά…\n"
 
 #: versions.py:20
 msgid ""
-"Could not get version list. If your internet connection is fine, the servers "
-"could be having technical issues."
+"Could not get version list. If your internet connection is fine, the "
+"servers could be having technical issues."
 msgstr ""
-"Δεν ήταν δυνατή η λήψη της λίστας εκδόσεων. Εάν η σύνδεσή σας στο Διαδίκτυο "
-"είναι καλή, οι διακομιστές μπορεί να έχουν τεχνικά προβλήματα"
+"Δεν ήταν δυνατή η λήψη της λίστας εκδόσεων. Εάν η σύνδεσή σας στο "
+"Διαδίκτυο είναι καλή, οι διακομιστές μπορεί να έχουν τεχνικά προβλήματα"
 
 #: versions.py:44
 msgid ""
-"We can't read the version of your installation. It could be corrupted. Do "
-"you want to reinstall the game?"
+"We can't read the version of your installation. It could be corrupted. Do"
+" you want to reinstall the game?"
 msgstr ""
-"Δεν μπορούμε να διαβάσουμε την έκδοση της εγκατάστασής σας. Θα μπορούσε να "
-"είναι αλλοιωμένη. Θέλετε να εγκαταστήσετε ξανά το παιχνίδι;"
+"Δεν μπορούμε να διαβάσουμε την έκδοση της εγκατάστασής σας. Θα μπορούσε "
+"να είναι αλλοιωμένη. Θέλετε να εγκαταστήσετε ξανά το παιχνίδι;"
 
 #: versions.py:47 versions.py:67 versions.py:95 versions.py:103 versions.py:114
 msgid "We have nothing to do. Goodbye!"
@@ -373,21 +377,21 @@ msgid ""
 "No game installation detected at given sourcemods path. Do you want to "
 "install the game?"
 msgstr ""
-"Δεν μπορούμε να διαβάσουμε την έκδοση της εγκατάστασής σας. Θα μπορούσε να "
-"είναι αλλοιωμένη. Θέλετε να εγκαταστήσετε ξανά το παιχνίδι;"
+"Δεν μπορούμε να διαβάσουμε την έκδοση της εγκατάστασής σας. Θα μπορούσε "
+"να είναι αλλοιωμένη. Θέλετε να εγκαταστήσετε ξανά το παιχνίδι;"
 
 #: versions.py:92
 msgid ""
-"The version of your installation is unknown. It could be corrupted. Do you "
-"want to reinstall the game?"
+"The version of your installation is unknown. It could be corrupted. Do "
+"you want to reinstall the game?"
 msgstr ""
-"Η έκδοση εγκατάστασής σας είναι άγνωστη. Θα μπορούσε να είναι αλλοιωμένη. "
-"Θέλετε να εγκαταστήσετε ξανά το παιχνίδι;"
+"Η έκδοση εγκατάστασής σας είναι άγνωστη. Θα μπορούσε να είναι αλλοιωμένη."
+" Θέλετε να εγκαταστήσετε ξανά το παιχνίδι;"
 
 #: versions.py:100
 msgid ""
-"We think we've found an existing up-to-date installation of the game. Do you "
-"want to reinstall it?"
+"We think we've found an existing up-to-date installation of the game. Do "
+"you want to reinstall it?"
 msgstr ""
 "Πιστεύουμε ότι βρήκαμε μια υπάρχουσα πλήρως ενημερωμένη εγκατάσταση του "
 "παιχνιδιού. Θέλετε να το εγκαταστήσετε ξανά;"
@@ -396,12 +400,13 @@ msgstr ""
 #, fuzzy
 msgid "An update is available for Pre-Fortress 2. Do you want to install it?"
 msgstr ""
-"Μια ενημέρωση για το παιχνίδι είναι διαθέσιμη. Θέλετε να την εγκαταστήσετε;"
+"Μια ενημέρωση για το παιχνίδι είναι διαθέσιμη. Θέλετε να την "
+"εγκαταστήσετε;"
 
 #: versions.py:109
 msgid ""
-"If running, please close your game client and/or game launcher. Confirm once "
-"they're closed."
+"If running, please close your game client and/or game launcher. Confirm "
+"once they're closed."
 msgstr ""
 
 #: versions.py:112
@@ -411,10 +416,11 @@ msgstr ""
 #: versions.py:116
 #, fuzzy
 msgid ""
-"An update is available, but no patch could be found for your game version. "
-"Try reinstalling?"
+"An update is available, but no patch could be found for your game "
+"version. Try reinstalling?"
 msgstr ""
-"Μια ενημέρωση για το παιχνίδι είναι διαθέσιμη. Θέλετε να την εγκαταστήσετε;"
+"Μια ενημέρωση για το παιχνίδι είναι διαθέσιμη. Θέλετε να την "
+"εγκαταστήσετε;"
 
 #~ msgid "Applying safety blacklist..."
 #~ msgstr "Εφαρμογή μαύρης λίστας ασφαλείας..."
@@ -422,36 +428,38 @@ msgstr ""
 #~ msgid "WARNING: could not apply safety blacklist."
 #~ msgstr "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: αδυναμία εφαρμογής μαύρης λίστας ασφαλείας."
 
-#, python-format
 #~ msgid ""
-#~ "You don't have enough free space for the download. A minimum of %s on "
-#~ "your primary drive is required."
+#~ "You don't have enough free space "
+#~ "for the download. A minimum of %s"
+#~ " on your primary drive is required."
 #~ msgstr ""
-#~ "Δέν έχετε αρκετό ελεύθερο χώρο για την λήψη. Απαιτείται τουλάχιστον %s "
-#~ "στον κύριο δίσκο σας."
+#~ "Δέν έχετε αρκετό ελεύθερο χώρο για "
+#~ "την λήψη. Απαιτείται τουλάχιστον %s στον"
+#~ " κύριο δίσκο σας."
 
-#, python-format
 #~ msgid "Getting %s patch..."
 #~ msgid_plural "Getting %s patches..."
 #~ msgstr[0] "Λήψη %s ενημέρωσης..."
 #~ msgstr[1] "Λήψη %s ενημερώσεων..."
 
-#, python-format
 #~ msgid "Downloading patch %s to %s..."
 #~ msgstr "Λήψη ενημέρωσης %s στο %s..."
 
 #~ msgid ""
-#~ "It's the recommended installation location. Would you like to install "
-#~ "Pre-Fortress 2 there?"
+#~ "It's the recommended installation location."
+#~ " Would you like to install Pre-"
+#~ "Fortress 2 there?"
 #~ msgstr ""
-#~ "Είναι η συνιστώμενη θέση εγκατάστασης. Θέλετε να εγκαταστήσετε το "
-#~ "Pre-Fortress 2 εκεί;"
+#~ "Είναι η συνιστώμενη θέση εγκατάστασης. "
+#~ "Θέλετε να εγκαταστήσετε το Pre-Fortress"
+#~ " 2 εκεί;"
 
 #~ msgid "You need to install Aria2 to use this script."
 #~ msgstr ""
-#~ "Θα χρειαστεί να εγκαταστήσετε το Aria2 για να χρησιμοποιήσετε αυτό το "
+#~ "Θα χρειαστεί να εγκαταστήσετε το Aria2"
+#~ " για να χρησιμοποιήσετε αυτό το "
 #~ "πρόγραμμα."
 
 #~ msgid "In that case, do you want to reinstall completely?"
-#~ msgstr ""
-#~ "Σε αυτήν την περίπτωση, θέλετε να κάνετε ολοκληρωτική επανεγκατάσταση;"
+#~ msgstr "Σε αυτήν την περίπτωση, θέλετε να κάνετε ολοκληρωτική επανεγκατάσταση;"
+

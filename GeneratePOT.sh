@@ -1,9 +1,9 @@
-#!/bin/sh
-# Linux Only
+#!/bin/bash
 POT_FILE=locale/pf2-downloader.pot
-xgettext --package-name=pf2-downloader --keyword=_ --keyword=_N:1,2 -l python -o "$POT_FILE" *.py
+pybabel extract --project=pf2-downloader --keywords=_ --keywords=_N:1,2 -o "$POT_FILE" *.py
 for PO_FILE in locale/*/LC_MESSAGES/*.po
 do
-	msgmerge -U "$PO_FILE" "$POT_FILE"
+	LOCALE=${PO_FILE#"locale/"}; LOCALE=${LOCALE%"/LC_MESSAGES/"*.po}
+	pybabel update -i "$POT_FILE" -o "$PO_FILE" -l "$LOCALE"
 done
 	
