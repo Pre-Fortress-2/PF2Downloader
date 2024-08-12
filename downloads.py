@@ -1,5 +1,5 @@
 from pathlib import Path
-from tkinter import filedialog, Tk
+import filedialpy
 from shutil import disk_usage, rmtree
 from gettext import gettext as _
 from gettext import ngettext as _N
@@ -80,11 +80,12 @@ def free_space_check(size: int, cat: str) -> None:
     if cat == 'temporary':
         if disk_usage(vars.TEMP_PATH)[2] < size:
             if gui.message_yes_no(_("You don't have enough free space in your computer's default temporary folder for this. A minimum of %s is required. Select alternate temporary folder?") % pretty_size(size), 1):
-                root = Tk()
-                root.withdraw()
                 try:
                     while disk_usage(vars.TEMP_PATH)[2] < size:
-                        vars.TEMP_PATH = filedialog.askdirectory()
+                        try:
+                            vars.TEMP_PATH = filedialpy.openDir()
+                        except Exception as e:
+                             gui.message_end(_(f"[bold red]:warning:Failed to open file dialog window. Please report the following error to:\nhttps://github.com/Pre-Fortress-2/PF2Downloader/issues \n---------\n{e}:warning:[/bold red]"), 1)
                         if disk_usage(vars.TEMP_PATH)[2] < size:
                             gui.message(_("Still not enough space at specified path. Retry, and select a different drive if available."))
                 except TypeError:

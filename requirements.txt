@@ -5,3 +5,4 @@ tqdm==4.66.4
 pyinstaller==6.10.0
 python-gettext==5.0
 Babel==2.16.0
+filedialpy==1.2.0

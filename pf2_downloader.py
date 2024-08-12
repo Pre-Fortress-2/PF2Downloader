@@ -20,6 +20,7 @@ import troubleshoot
 import vars
 import versions
 import selfupdate
+import filedialpy
 
 # PyInstaller offers no native way to select which application you use for the console.
 # Instead, it uses the system default, which is cmd.exe at time of writing.
@@ -79,12 +80,12 @@ def wizard() -> None:
 
         # All of the choice logic is handled in this function directly.
         gui.main_menu()
-
+    
     except Exception as ex:
         if ex is not SystemExit:
             traceback.print_exc()
             print(_("[italic magenta]----- Exception details above this line -----"))
-            print(_("[bold red]:warning: The program has failed. Post a screenshot in #technical-issues on the Discord. :warning:[/bold red]"))
+            print(_("[bold red]:warning: The program has failed. Please report this to \nhttps://github.com/Pre-Fortress-2/PF2Downloader/issues :warning:[/bold red]"))
             if os.environ.get("WT_SESSION"):
                 print(_("[bold]You are safe to close this window."))
             else:
@@ -162,7 +163,7 @@ path will be the current work directory.'''
         if ex is not SystemExit:
             traceback.print_exc()
             print(_("[italic magenta]----- Exception details above this line -----"))
-            print(_("[bold red]:warning: The program has failed. Post a screenshot in #technical-issues on the Discord. :warning:[/bold red]"))
+            print(_("[bold red]:warning: The program has failed. Please report this to \nhttps://github.com/Pre-Fortress-2/PF2Downloader/issues:warning :warning:[/bold red]"))
             exit(1)
 
 if vars.SCRIPT_MODE:
