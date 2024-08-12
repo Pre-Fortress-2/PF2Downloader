@@ -97,7 +97,6 @@ def manual_script() -> None:
             print(_(
             '''Usage: PF2Downloader [COMMAND] [PATH]
 Installation utility for Pre-Fortress 2
-Forked from TF2CDownloader
 
 If no arguments are provided, the downloader will be ran in setup mode, in
 which a series of questions will be asked to install the game for a regular

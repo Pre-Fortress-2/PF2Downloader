@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  pf2-downloader\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 13:45-0400\n"
+"POT-Creation-Date: 2024-08-12 14:19-0400\n"
 "PO-Revision-Date: 2022-09-20 17:02+0200\n"
 "Last-Translator: Azzy <azzyr@protonmail.com>\n"
 "Language: el\n"
@@ -19,44 +19,44 @@ msgstr ""
 msgid "Extracting the downloaded archive, please wait patiently."
 msgstr "Αποσυμπίεση του ληφθέντος αρχείου, παρακαλώ περιμένετε."
 
-#: downloads.py:58
+#: downloads.py:59
 #, fuzzy
 msgid "Patching your game with the new update, please wait patiently."
 msgstr "Αποσυμπίεση του ληφθέντος αρχείου, παρακαλώ περιμένετε."
 
-#: downloads.py:66
+#: downloads.py:67
 #, python-format
 msgid "%s byte"
 msgid_plural "%s bytes"
 msgstr[0] "%s byte"
 msgstr[1] "%s bytes"
 
-#: downloads.py:68
+#: downloads.py:69
 #, python-format
 msgid "%.2f kB"
 msgstr "%.2f kB"
 
-#: downloads.py:70
+#: downloads.py:71
 #, python-format
 msgid "%.2f MB"
 msgstr "%.2f MB"
 
-#: downloads.py:72
+#: downloads.py:73
 #, python-format
 msgid "%.2f GB"
 msgstr "%.2f GB"
 
-#: downloads.py:74
+#: downloads.py:75
 #, python-format
 msgid "%.2f TB"
 msgstr "%.2f TB"
 
-#: downloads.py:76
+#: downloads.py:77
 #, python-format
 msgid "%.2f PB"
 msgstr "%.2f PB"
 
-#: downloads.py:81
+#: downloads.py:82
 #, fuzzy, python-format
 msgid ""
 "You don't have enough free space in your computer's default temporary "
@@ -66,17 +66,17 @@ msgstr ""
 "Δέν έχετε αρκετό ελεύθερο χώρο για την αποσυμπίεση. Απαιτείται "
 "τουλάχιστον %s στην επιλεγμένη τοποθεσία αποσυμπίεσης."
 
-#: downloads.py:88
+#: downloads.py:89
 msgid ""
 "Still not enough space at specified path. Retry, and select a different "
 "drive if available."
 msgstr ""
 
-#: downloads.py:90
+#: downloads.py:91
 msgid "Folder selection prompt closed without choosing any path. Exiting..."
 msgstr ""
 
-#: downloads.py:95
+#: downloads.py:96
 #, python-format
 msgid ""
 "You don't have enough free space for the extraction. A minimum of %s at "
@@ -85,11 +85,11 @@ msgstr ""
 "Δέν έχετε αρκετό ελεύθερο χώρο για την αποσυμπίεση. Απαιτείται "
 "τουλάχιστον %s στην επιλεγμένη τοποθεσία αποσυμπίεσης."
 
-#: downloads.py:117
+#: downloads.py:118
 msgid "Getting the archive..."
 msgstr "Λήψη αρχείου..."
 
-#: downloads.py:122
+#: downloads.py:123
 msgid "The specified extraction location does not exist."
 msgstr "Η καθορισμένη θέση αποσυμπίεσης δεν υπάρχει."
 
@@ -111,13 +111,13 @@ msgstr ""
 "Έναρξη της λήψης για το Pre-Fortress 2... Ενδέχεται να δείτε ορισμένα "
 "σφάλματα τα οποία μπορείτε να αγνοήσετε."
 
-#: gui.py:35 gui.py:45 pf2_downloader.py:135
+#: gui.py:35 gui.py:45 pf2_downloader.py:134
 msgid "The installation has successfully completed. Remember to restart Steam!"
 msgstr ""
 "Η εγκατάσταση ολοκληρώθηκε με επιτυχία. Μήν ξεχάσετε να επανεκκινήσετε το"
 " Steam!"
 
-#: gui.py:40 pf2_downloader.py:156
+#: gui.py:40 pf2_downloader.py:155
 msgid "The update has successfully completed."
 msgstr "Η ενημέρωση πραγματοποιήθηκε με επιτυχία."
 
@@ -171,11 +171,11 @@ msgstr ""
 "Απο ότι φαίνεται λειτουργούμε στο παρασκήνιο. Δέν το θέλουμε αυτό, οπότε "
 "σταματάμε."
 
-#: pf2_downloader.py:86 pf2_downloader.py:165
+#: pf2_downloader.py:86 pf2_downloader.py:164
 msgid "[italic magenta]----- Exception details above this line -----"
 msgstr "[italic magenta]----- Λεπτομέρειες σφάλματος πάνω από αυτή τη γραμμή -----"
 
-#: pf2_downloader.py:87 pf2_downloader.py:166
+#: pf2_downloader.py:87 pf2_downloader.py:165
 msgid ""
 "[bold red]:warning: The program has failed. Post a screenshot in "
 "#technical-issues on the Discord. :warning:[/bold red]"
@@ -192,7 +192,6 @@ msgstr "[bold]Μπορείτε να κλείσετε το παράθυρο."
 msgid ""
 "Usage: PF2Downloader [COMMAND] [PATH]\n"
 "Installation utility for Pre-Fortress 2\n"
-"Forked from TF2CDownloader\n"
 "\n"
 "If no arguments are provided, the downloader will be ran in setup mode, "
 "in\n"
@@ -249,12 +248,12 @@ msgstr ""
 "τότε η\n"
 "θέση θα είναι o τρέχων φάκελος."
 
-#: pf2_downloader.py:132
+#: pf2_downloader.py:131
 #, fuzzy
 msgid "Pre-Fortress 2 is already installed. Assuming a reinstallation."
 msgstr "To Pre-Fortress 2 είναι ήδη εγκατεστημένο. Υποτείθεται επανεγκατάσταση."
 
-#: pf2_downloader.py:147
+#: pf2_downloader.py:146
 #, fuzzy
 msgid ""
 "Pre-Fortress 2 isn't installed, cannot do an update. Consider using "
@@ -263,7 +262,7 @@ msgstr ""
 "Το Pre-Fortress 2 δέν είναι εγκατεστημένο, δέν μπορεί να πραγματοποιηθεί "
 "ενημέρωση. Λάβετε υπόψιν την χρήση του --install αντί αυτού."
 
-#: pf2_downloader.py:159
+#: pf2_downloader.py:158
 msgid "Unrecognised command. Try --help"
 msgstr "Μη αναγνωρισμένη εντολή. Δοκιμάστε το --help"
 

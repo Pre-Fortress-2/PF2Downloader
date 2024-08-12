@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  pf2-downloader\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 13:45-0400\n"
+"POT-Creation-Date: 2024-08-12 14:19-0400\n"
 "PO-Revision-Date: 2023-05-02 16:53+0000\n"
 "Last-Translator: Technochips <thetechnochips@protonmail.com>\n"
 "Language: fr\n"
@@ -20,43 +20,43 @@ msgstr ""
 msgid "Extracting the downloaded archive, please wait patiently."
 msgstr "Extraction de l'archive téléchargée, veuillez patentier."
 
-#: downloads.py:58
+#: downloads.py:59
 msgid "Patching your game with the new update, please wait patiently."
 msgstr "Patchement du jeu avec la nouvelle mise à jour, veuillez patienter."
 
-#: downloads.py:66
+#: downloads.py:67
 #, python-format
 msgid "%s byte"
 msgid_plural "%s bytes"
 msgstr[0] "%s octet"
 msgstr[1] "%s octets"
 
-#: downloads.py:68
+#: downloads.py:69
 #, python-format
 msgid "%.2f kB"
 msgstr "%.2f ko"
 
-#: downloads.py:70
+#: downloads.py:71
 #, python-format
 msgid "%.2f MB"
 msgstr "%.2f Mo"
 
-#: downloads.py:72
+#: downloads.py:73
 #, python-format
 msgid "%.2f GB"
 msgstr "%.2f Go"
 
-#: downloads.py:74
+#: downloads.py:75
 #, python-format
 msgid "%.2f TB"
 msgstr "%.2f To"
 
-#: downloads.py:76
+#: downloads.py:77
 #, python-format
 msgid "%.2f PB"
 msgstr "%.2f Po"
 
-#: downloads.py:81
+#: downloads.py:82
 #, python-format
 msgid ""
 "You don't have enough free space in your computer's default temporary "
@@ -67,7 +67,7 @@ msgstr ""
 "au minimum %s d'espace sur l'emplacement d'installation. Sélectionner un "
 "dossier temporaire alternatif ?"
 
-#: downloads.py:88
+#: downloads.py:89
 msgid ""
 "Still not enough space at specified path. Retry, and select a different "
 "drive if available."
@@ -75,13 +75,13 @@ msgstr ""
 "Toujours pas assez d'escape sur le chemin spécifié. Réessayez, et "
 "sélectionnez un disque différent si disponible."
 
-#: downloads.py:90
+#: downloads.py:91
 msgid "Folder selection prompt closed without choosing any path. Exiting..."
 msgstr ""
 "L'invite de sélection de dossier a été fermée sans avoir choisi de "
 "chemins. Fermeture..."
 
-#: downloads.py:95
+#: downloads.py:96
 #, python-format
 msgid ""
 "You don't have enough free space for the extraction. A minimum of %s at "
@@ -90,11 +90,11 @@ msgstr ""
 "Vous n'avez pas assez d'espace libre pour l'extraction. Vous devez avoir "
 "au minimum %s d'espace sur l'emplacement d'installation."
 
-#: downloads.py:117
+#: downloads.py:118
 msgid "Getting the archive..."
 msgstr "Récupération de l'archive..."
 
-#: downloads.py:122
+#: downloads.py:123
 msgid "The specified extraction location does not exist."
 msgstr "L'emplacement d'extraction spécifié n'existe pas."
 
@@ -122,11 +122,11 @@ msgstr ""
 "Téléchargement de Pre-Fortess 2... Vous pouvez voir certaines erreurs qui"
 " peuvent être parfaitement ignorées."
 
-#: gui.py:35 gui.py:45 pf2_downloader.py:135
+#: gui.py:35 gui.py:45 pf2_downloader.py:134
 msgid "The installation has successfully completed. Remember to restart Steam!"
 msgstr "L'installation est terminée. N'oubliez pas de redémarrer Steam !"
 
-#: gui.py:40 pf2_downloader.py:156
+#: gui.py:40 pf2_downloader.py:155
 msgid "The update has successfully completed."
 msgstr "La mise à jour est terminée."
 
@@ -180,13 +180,13 @@ msgstr ""
 "On dirait qu'on est en train de tourner en arrière plan. On ne veut pas "
 "ça, donc on sort."
 
-#: pf2_downloader.py:86 pf2_downloader.py:165
+#: pf2_downloader.py:86 pf2_downloader.py:164
 msgid "[italic magenta]----- Exception details above this line -----"
 msgstr ""
 "[italic magenta]----- Détails des exceptions au dessus de cette ligne "
 "-----"
 
-#: pf2_downloader.py:87 pf2_downloader.py:166
+#: pf2_downloader.py:87 pf2_downloader.py:165
 msgid ""
 "[bold red]:warning: The program has failed. Post a screenshot in "
 "#technical-issues on the Discord. :warning:[/bold red]"
@@ -204,7 +204,6 @@ msgstr "[bold]Vous pouvez fermer cette fenêtre."
 msgid ""
 "Usage: PF2Downloader [COMMAND] [PATH]\n"
 "Installation utility for Pre-Fortress 2\n"
-"Forked from TF2CDownloader\n"
 "\n"
 "If no arguments are provided, the downloader will be ran in setup mode, "
 "in\n"
@@ -259,12 +258,12 @@ msgstr ""
 "le dossier sourcemods dans les dossiers de Steam. Si il n'a pas pu être\n"
 "détecté, alors le chemin sera le dossier de travail actuel."
 
-#: pf2_downloader.py:132
+#: pf2_downloader.py:131
 #, fuzzy
 msgid "Pre-Fortress 2 is already installed. Assuming a reinstallation."
 msgstr "Pre-Fortess 2 est déjà installé. Réinstallation..."
 
-#: pf2_downloader.py:147
+#: pf2_downloader.py:146
 #, fuzzy
 msgid ""
 "Pre-Fortress 2 isn't installed, cannot do an update. Consider using "
@@ -273,7 +272,7 @@ msgstr ""
 "Pre-Fortess 2 n'est pas installé, impossible de mettre à jour. Essayez "
 "d'utiliser --installer à la place."
 
-#: pf2_downloader.py:159
+#: pf2_downloader.py:158
 msgid "Unrecognised command. Try --help"
 msgstr "Commande non reconnue. Essayez --help"
 
