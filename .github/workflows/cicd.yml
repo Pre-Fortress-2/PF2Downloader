@@ -1,6 +1,10 @@
-name: "PF2 Build"
+name: "Build and Release"
 on: 
   workflow_dispatch:
+
+env:
+  NAME_UPPER: PF2
+  NAME_LOWER: pf2
 
 jobs:
   export-windows:
@@ -22,16 +26,20 @@ jobs:
       - name: Generate SHA512
         shell: pwsh
         run: |
-          Move-Item ./dist/pf2_downloader.exe PF2DownloaderWindows.exe
-          Get-filehash -Algorithm SHA512 PF2DownloaderWindows.exe > PF2DownloaderWindows_SHA512
-          Compress-Archive -Path PF2DownloaderWindows.exe -DestinationPath PF2DownloaderWindows.zip
+          Move-Item ./dist/${{ env.NAME_LOWER }}_downloader.exe ${{ env.NAME_UPPER }}DownloaderWindows.exe
+          Get-filehash -Algorithm SHA512 ${{ env.NAME_UPPER }}DownloaderWindows.exe > ${{ env.NAME_UPPER }}DownloaderWindows_SHA512
+          Compress-Archive -Path ${{ env.NAME_UPPER }}DownloaderWindows.exe -DestinationPath ${{ env.NAME_UPPER }}DownloaderWindows.zip
+      - name: dir
+        run: |
+        dir
+        dir dist
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: windows
           path: |
-            path: PF2DownloaderWindows.zip
-            path: PF2DownloaderWindows_SHA512
+            path: ${{ env.NAME_UPPER }}DownloaderWindows.zip
+            path: ${{ env.NAME_UPPER }}DownloaderWindows_SHA512
           retention-days: 1
 
   export-linux:
@@ -43,7 +51,6 @@ jobs:
       - name: Setup environment
         run: |
           sudo apt update
-          sudo apt install gettext
           pip install -r requirements.txt
       - name: Generate Localizations
         run: |
@@ -51,20 +58,24 @@ jobs:
       - name: Build Linux
         run: |
           ./CompileLinux.sh
-          mv dist/pf2_downloader PF2DownloaderLinux
+          mv dist/${{ env.NAME_LOWER}}_downloader ${{ env.NAME_UPPER }}DownloaderLinux
       - name: Generate SHA512
         run: |
-          sha512sum PF2DownloaderLinux > PF2DownloaderLinux_SHA512
+          sha512sum ${{ env.NAME_UPPER }}DownloaderLinux >${{ env.NAME_UPPER }}DownloaderLinux_SHA512
       - name: Zip Application
         run: |
-          zip PF2DownloaderLinux.zip PF2DownloaderLinux
+          zip ${{ env.NAME_UPPER }}DownloaderLinux.zip ${{ env.NAME_UPPER }}DownloaderLinux
+      - name: dir
+        run: |
+        ls
+        ls dist
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: linux
           path: |
-            path: PF2DownloaderLinux.zip
-            path: PF2DownloaderLinux_SHA512
+            path: ${{ env.NAME_UPPER }}DownloaderLinux.zip
+            path: ${{ env.NAME_UPPER }}DownloaderLinux_SHA512
           retention-days: 1
 
   release-builds:
@@ -78,8 +89,8 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           draft: true
-          name: PF2 Downloader
-          files: PF2Downloader*
+          name: ${{ env.NAME_UPPER }} Downloader
+          files: ${{ env.NAME_UPPER }}Downloader*
           generate_release_notes: true
           tag_name: test
           make_latest: "true"
