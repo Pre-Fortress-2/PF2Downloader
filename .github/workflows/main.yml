@@ -30,7 +30,7 @@ jobs:
       - name: Generate SHA512
         shell: pwsh
         run: |
-          Get-FileHash -Algorithm SHA512 ${{ env.NAME_UPPER }}DownloaderWindows.exe > ${{ env.NAME_UPPER DownloaderWindows_SHA512
+          Get-FileHash -Algorithm SHA512 ${{ env.NAME_UPPER }}DownloaderWindows.exe > ${{ env.NAME_UPPER }}DownloaderWindows_SHA512
       - name: Zip Application
         shell: pwsh
         run: |
