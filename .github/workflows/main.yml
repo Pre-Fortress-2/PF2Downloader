@@ -92,7 +92,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           draft: true
-          name: ${{ env.DATE }} ${{ env.NAME_UPPER }}Downloader
+          name: ${{ env.NAME_UPPER }}Downloader ${{ env.DATE }} 
           files: |
             */${{ env.NAME_UPPER }}Downloader*
           generate_release_notes: true
