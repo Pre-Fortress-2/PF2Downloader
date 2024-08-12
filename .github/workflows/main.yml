@@ -28,23 +28,22 @@ jobs:
         run: |
           Move-Item ./dist/${{ env.NAME_LOWER }}_downloader.exe ${{ env.NAME_UPPER }}DownloaderWindows.exe
           Get-filehash -Algorithm SHA512 ${{ env.NAME_UPPER }}DownloaderWindows.exe > ${{ env.NAME_UPPER }}DownloaderWindows_SHA512
-          Compress-Archive -Path ${{ env.NAME_UPPER }}DownloaderWindows.exe -DestinationPath ${{ env.NAME_UPPER }}DownloaderWindows.zip
-      - name: dir
+      - name: Zip Application
+        shell: pwsh
         run: |
-          dir
-          dir dist
+          Compress-Archive -Path ${{ env.NAME_UPPER }}DownloaderWindows.exe -DestinationPath ${{ env.NAME_UPPER }}DownloaderWindows.zip
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: windows
           path: |
-            path: ${{ env.NAME_UPPER }}DownloaderWindows.zip
-            path: ${{ env.NAME_UPPER }}DownloaderWindows_SHA512
+            ${{ env.NAME_UPPER }}DownloaderWindows_SHA512
+            ${{ env.NAME_UPPER }}DownloaderWindows.zip
           retention-days: 1
 
   export-linux:
     name: Linux Export
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -65,22 +64,19 @@ jobs:
       - name: Zip Application
         run: |
           zip ${{ env.NAME_UPPER }}DownloaderLinux.zip ${{ env.NAME_UPPER }}DownloaderLinux
-      - name: dir
-        run: |
-          ls
-          ls dist
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: linux
           path: |
-            path: ${{ env.NAME_UPPER }}DownloaderLinux.zip
-            path: ${{ env.NAME_UPPER }}DownloaderLinux_SHA512
+            ${{ env.NAME_UPPER }}DownloaderLinux_SHA512
+            ${{ env.NAME_UPPER }}DownloaderLinux.zip
           retention-days: 1
 
   release-builds:
+    name: Release Draft
     needs: [export-linux, export-windows]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Download Linux Installer
