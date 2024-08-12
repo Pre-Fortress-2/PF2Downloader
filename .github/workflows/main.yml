@@ -97,5 +97,5 @@ jobs:
             */${{ env.NAME_UPPER }}Downloader*
           generate_release_notes: true
           tag_name: ${{ env.DATE }}
-          make_latest: "true"
+          make_latest: true
       
