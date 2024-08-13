@@ -20,7 +20,6 @@ import troubleshoot
 import vars
 import versions
 import selfupdate
-import filedialpy
 
 # PyInstaller offers no native way to select which application you use for the console.
 # Instead, it uses the system default, which is cmd.exe at time of writing.

@@ -82,14 +82,13 @@ def free_space_check(size: int, cat: str) -> None:
             if gui.message_yes_no(_("You don't have enough free space in your computer's default temporary folder for this. A minimum of %s is required. Select alternate temporary folder?") % pretty_size(size), 1):
                 try:
                     while disk_usage(vars.TEMP_PATH)[2] < size:
-                        try:
-                            vars.TEMP_PATH = filedialpy.openDir()
-                        except Exception as e:
-                             gui.message_end(_(f"[bold red]:warning:Failed to open file dialog window. Please report the following error to:\nhttps://github.com/Pre-Fortress-2/PF2Downloader/issues \n---------\n{e}:warning:[/bold red]"), 1)
+                        vars.TEMP_PATH = filedialpy.openDir()
                         if disk_usage(vars.TEMP_PATH)[2] < size:
                             gui.message(_("Still not enough space at specified path. Retry, and select a different drive if available."))
-                except TypeError:
-                    gui.message_end(_("Folder selection prompt closed without choosing any path. Exiting..."), 1)
+                except Exception as ex:
+                    if ex is FileNotFoundError:
+                        gui.message_end(_("Folder selection prompt closed without choosing any path. Exiting..."), 1)
+                    gui.message_end(_(f"[bold red]:warning:Failed to open file dialog window. Please report the following error to:\nhttps://github.com/Pre-Fortress-2/PF2Downloader/issues \n---------\n{e}:warning:[/bold red]"), 1)
 
 
     if cat == 'permanent':
