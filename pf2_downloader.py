@@ -94,28 +94,7 @@ def wizard() -> None:
 def manual_script() -> None:
     try:
         if sys.argv[1] == "--help":
-            print(_(
-            '''Usage: PF2Downloader [COMMAND] [PATH]
-Installation utility for Pre-Fortress 2
-
-If no arguments are provided, the downloader will be ran in setup mode, in
-which a series of questions will be asked to install the game for a regular
-user. This is what's used when opening the downloader from the desktop.
-
-Valid commands:
-  --install           installs Pre-Fortress 2 into a new folder inside PATH
-  --update            updates the pre-existing Pre-Fortress 2 installation in its
-                      folder inside PATH
-  --help              shows this
-
-PATH is the folder containing Pre-Fortress 2's folder. This is usually the
-sourcemods folder for clients, or the Source dedicated server folder for
-servers.
-
-If PATH isn't provided, then it'll be replaced with the detected path to the
-sourcemods folder in the Steam directory. If it couldn't be detected, then the
-path will be the current work directory.'''
-            ))
+            print(_(vars.HELP_MENU))
             exit(0)
 
         if sys.argv[1] == "--install":
