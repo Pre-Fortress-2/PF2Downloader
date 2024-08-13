@@ -25,11 +25,11 @@ import selfupdate
 # Instead, it uses the system default, which is cmd.exe at time of writing.
 # This hack checks if Windows Terminal is installed. If it is, and if the application
 # is launched with cmd.exe instead, it relaunches the application in WT instead.
-if not vars.SCRIPT_MODE and system() == 'Windows':
-    if which('wt') is not None and os.environ.get("WT_SESSION") is None:
-        run(['wt', argv[0]], check=True)
-        exit()
-
+# if not vars.SCRIPT_MODE and system() == 'Windows':
+#     if which('wt') is not None and os.environ.get("WT_SESSION") is None:
+#         run(['wt', argv[0]], check=True)
+#         exit()
+#   
 # Disable QuickEdit so the process doesn't pause when clicked
 if not vars.SCRIPT_MODE and system() == 'Windows':
     kernel32 = ctypes.windll.kernel32
@@ -85,10 +85,10 @@ def wizard() -> None:
             traceback.print_exc()
             print(_("[italic magenta]----- Exception details above this line -----"))
             print(_("[bold red]:warning: The program has failed. Please report this to \nhttps://github.com/Pre-Fortress-2/PF2Downloader/issues :warning:[/bold red]"))
-            if os.environ.get("WT_SESSION"):
-                print(_("[bold]You are safe to close this window."))
-            else:
-                input(_("Press Enter to exit."))
+            # if os.environ.get("WT_SESSION"):
+            #     print(_("[bold]You are safe to close this window."))
+            # else:
+            input(_("Press Enter to exit."))
             exit(1)
 
 def manual_script() -> None:
